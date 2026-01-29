@@ -1,0 +1,1791 @@
+[
+  {
+    "name": "Shop",
+    "url": "https://shop.kt.com/",
+    "children": [
+      {
+        "name": "모바일 기기",
+        "url": "https://shop.kt.com/wireless/mobileList.do?&category=mobile",
+        "children": [
+          {
+            "name": "핸드폰",
+            "url": "https://shop.kt.com/mobile/products.do?category=mobile",
+            "children": []
+          },
+          {
+            "name": "인기메뉴Apple 브랜드관",
+            "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2642",
+            "children": []
+          },
+          {
+            "name": "갤럭시 브랜드관",
+            "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2468",
+            "children": []
+          },
+          {
+            "name": "스마트 워치",
+            "url": "https://shop.kt.com/mobile/products.do?category=watch",
+            "children": []
+          },
+          {
+            "name": "태블릿",
+            "url": "https://shop.kt.com/mobile/products.do?category=tablet",
+            "children": []
+          },
+          {
+            "name": "노트북/에그",
+            "url": "https://shop.kt.com/mobile/products.do?category=eggand",
+            "children": []
+          },
+          {
+            "name": "휴대폰 지원금",
+            "url": "https://shop.kt.com/smart/supportAmtList.do",
+            "children": []
+          },
+          {
+            "name": "핸드폰 가입 혜택",
+            "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1662",
+            "children": []
+          },
+          {
+            "name": "중고폰 보상 신청",
+            "url": "https://shop.kt.com/goodbye/phoneView.do",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "USIM/eSIM/자급제",
+        "url": "https://shop.kt.com/direct/whyKTSIM.do",
+        "children": [
+          {
+            "name": "인기메뉴핸드폰 요금제 가입",
+            "url": "https://shop.kt.com/direct/whyKTSIM.do",
+            "children": [
+              {
+                "name": "Why KT USIM/eSIM",
+                "url": "https://shop.kt.com/direct/whyKTSIM.do",
+                "children": []
+              },
+              {
+                "name": "USIM 가입",
+                "url": "https://shop.kt.com/direct/directUsim.do",
+                "children": []
+              },
+              {
+                "name": "eSIM 가입",
+                "url": "https://shop.kt.com/direct/directEsim.do",
+                "children": []
+              },
+              {
+                "name": "듀얼번호 가입",
+                "url": "https://shop.kt.com/direct/directDual.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "무약정 다이렉트 요고",
+            "url": "https://shop.kt.com/unify/yogoEvent.do",
+            "children": [
+              {
+                "name": "요고 요금제 가입 혜택",
+                "url": "https://shop.kt.com/unify/yogoEvent.do",
+                "children": []
+              },
+              {
+                "name": "핸드폰 등록 및 요금제 변경",
+                "url": "https://shop.kt.com/direct/directChangeRate.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "스마트기기 요금제 가입",
+            "url": "https://shop.kt.com/direct/directSmart.do",
+            "children": []
+          },
+          {
+            "name": "데이터쉐어링 가입",
+            "url": "https://shop.kt.com/direct/directSharing.do",
+            "children": []
+          },
+          {
+            "name": "선불 USIM 구매/충전",
+            "url": "https://shop.kt.com/unify/mobile.do?&category=usim",
+            "children": []
+          },
+          {
+            "name": "eSIM 이동",
+            "url": "https://shop.kt.com/direct/directEsimMove.do",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "인터넷/TV",
+        "url": "https://shop.kt.com/wire/list.do?mainProd=internettv",
+        "children": [
+          {
+            "name": "인터넷+TV",
+            "url": "https://shop.kt.com/wire/list.do?mainProd=internettv",
+            "children": []
+          },
+          {
+            "name": "인터넷",
+            "url": "https://shop.kt.com/wire/list.do?mainProd=internet",
+            "children": []
+          },
+          {
+            "name": "TV",
+            "url": "https://shop.kt.com/wire/list.do?mainProd=tv",
+            "children": []
+          },
+          {
+            "name": "전화",
+            "url": "https://shop.kt.com/wire/list.do?mainProd=phone",
+            "children": []
+          },
+          {
+            "name": "소상공인 추천상품",
+            "url": "https://product.kt.com/benefit/small-business/package/web/html/main/main.html",
+            "children": [
+              {
+                "name": "으랏차차 패키지",
+                "url": "https://product.kt.com/wDic/soho/marketing.do?ItemCode=main",
+                "children": []
+              },
+              {
+                "name": "하이오더",
+                "url": "https://product.kt.com/wDic/soho/marketing.do?ItemCode=highorder",
+                "children": []
+              },
+              {
+                "name": "KT 서빙로봇",
+                "url": "https://product.kt.com/wDic/soho/marketing.do?ItemCode=airobot",
+                "children": []
+              },
+              {
+                "name": "기가아이즈(CCTV)",
+                "url": "https://shop.kt.com/wire/gigaeyes.do",
+                "children": []
+              },
+              {
+                "name": "사장님 혜택존",
+                "url": "https://product.kt.com/wDic/soho/productDetail.do?ItemCode=1513",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "가입 사은품 안내",
+            "url": "https://shop.kt.com/wire/halfPricList.do",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "핫딜/기획전/혜택",
+        "url": "https://hotdeal.kt.com",
+        "children": [
+          {
+            "name": "인기메뉴핫딜",
+            "url": "https://hotdeal.kt.com",
+            "children": []
+          },
+          {
+            "name": "5시 핫픽",
+            "url": "https://shop.kt.com/deal/pick.do",
+            "children": []
+          },
+          {
+            "name": "친구초대 #케이득",
+            "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2574",
+            "children": [
+              {
+                "name": "친구초대 #케이득",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2574",
+                "children": []
+              },
+              {
+                "name": "나의 추천코드",
+                "url": "https://shop.kt.com/recommend/myShopReferralCd.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "가전구독",
+            "url": "https://shop.kt.com/rental/rentalBrandDtlView.do",
+            "children": []
+          },
+          {
+            "name": "출석체크",
+            "url": "https://shop.kt.com/deal/eventAttend.do",
+            "children": []
+          },
+          {
+            "name": "신규메뉴캐시리워드",
+            "url": "https://shop.kt.com/display/offerwall.do",
+            "children": []
+          },
+          {
+            "name": "기획전",
+            "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR05",
+            "children": [
+              {
+                "name": "통신상품",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR05&subDispNo=STOR0501",
+                "children": []
+              },
+              {
+                "name": "액세서리",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR05&subDispNo=STOR0503",
+                "children": []
+              },
+              {
+                "name": "당첨자발표",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR05&subDispNo=STOR0506",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "k-tmi 웹진",
+            "url": "https://shop.kt.com/unify/webzineList.do",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "액세서리",
+        "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR04",
+        "children": [
+          {
+            "name": "인기메뉴피지컬 AI 디바이스",
+            "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2708",
+            "children": []
+          },
+          {
+            "name": "금주의 인기상품",
+            "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR04",
+            "children": []
+          },
+          {
+            "name": "브랜드 가전",
+            "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR0435",
+            "children": [
+              {
+                "name": "다이슨",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043501",
+                "children": []
+              },
+              {
+                "name": "DJI",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043502",
+                "children": []
+              },
+              {
+                "name": "로라스타",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043503",
+                "children": []
+              },
+              {
+                "name": "기타",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043504",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "스마트 디바이스",
+            "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR0430",
+            "children": [
+              {
+                "name": "태블릿",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043005",
+                "children": []
+              },
+              {
+                "name": "워치/스트랩",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043006",
+                "children": []
+              },
+              {
+                "name": "이어폰/스피커",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043007",
+                "children": []
+              },
+              {
+                "name": "AI/지니 TV 리모컨",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043002",
+                "children": []
+              },
+              {
+                "name": "기타",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043004",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "모바일 액세서리",
+            "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR0431",
+            "children": [
+              {
+                "name": "케이스",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043101",
+                "children": []
+              },
+              {
+                "name": "충전기/배터리/케이블",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043102",
+                "children": []
+              },
+              {
+                "name": "거치대/스마트톡",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043103",
+                "children": []
+              },
+              {
+                "name": "필름/강화유리",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043104",
+                "children": []
+              },
+              {
+                "name": "기타",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043105",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "자급제폰/중고폰",
+            "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR0429",
+            "children": [
+              {
+                "name": "갤럭시 자급제폰",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR042902",
+                "children": []
+              },
+              {
+                "name": "샤오미 자급제폰",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR042903",
+                "children": []
+              },
+              {
+                "name": "중고폰",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR042901",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "라온 굿즈",
+            "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR0434",
+            "children": [
+              {
+                "name": "디지털 액세서리",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043401",
+                "children": []
+              },
+              {
+                "name": "일상용품",
+                "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR043402",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "마이샵/이용안내",
+        "url": "https://shop.kt.com/unify/orderHistory.do",
+        "children": [
+          {
+            "name": "주문내역",
+            "url": "https://shop.kt.com/unify/orderHistory.do",
+            "children": [
+              {
+                "name": "통신상품",
+                "url": "https://shop.kt.com/unify/orderHistory.do",
+                "children": []
+              },
+              {
+                "name": "가전구독",
+                "url": "https://shop.kt.com/person/wireRentalOrderList.do",
+                "children": []
+              },
+              {
+                "name": "액세서리",
+                "url": "https://shop.kt.com/person/orderHistoryMain.do?thisHref=Acces",
+                "children": []
+              },
+              {
+                "name": "USIM 구매",
+                "url": "https://shop.kt.com/direct/quickMyshop.do",
+                "children": []
+              },
+              {
+                "name": "그린폰 거래",
+                "url": "https://shop.kt.com/person/orderHistoryMain.do?thisHref=GreenPhone",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "장바구니",
+            "url": "https://shop.kt.com/uniteOrder/orderCartView.do",
+            "children": [
+              {
+                "name": "통신상품",
+                "url": "https://shop.kt.com/uniteOrder/orderCartView.do",
+                "children": []
+              },
+              {
+                "name": "액세서리",
+                "url": "https://shop.kt.com/accessory/accsCartProdList.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "찜 상품",
+            "url": "https://shop.kt.com/person/mobileCartProdList.do",
+            "children": []
+          },
+          {
+            "name": "최근 본 상품",
+            "url": "https://shop.kt.com/person/recentlyViewedProd.do",
+            "children": []
+          },
+          {
+            "name": "포인트/쿠폰",
+            "url": "https://shop.kt.com/person/couponPointMain.do",
+            "children": []
+          },
+          {
+            "name": "구매후기",
+            "url": "https://shop.kt.com/person/reviewList.do",
+            "children": []
+          },
+          {
+            "name": "이용안내",
+            "url": "https://shop.kt.com/support/shopMobileGuide.do",
+            "children": [
+              {
+                "name": "핸드폰 구매 이용안내",
+                "url": "https://shop.kt.com/support/shopMobileGuide.do",
+                "children": []
+              },
+              {
+                "name": "인터넷/TV 가입 이용안내",
+                "url": "https://shop.kt.com/support/shopInternetTvGuide.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "자주하는 질문",
+            "url": "https://ermsweb.kt.com/pc/faq/faqList.do?categoryType=shop",
+            "children": []
+          },
+          {
+            "name": "나의 추천코드",
+            "url": "https://shop.kt.com/recommend/myShopReferralCd.do",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "상품",
+    "url": "https://product.kt.com",
+    "children": [
+      {
+        "name": "모바일",
+        "url": "https://product.kt.com/wDic/index.do?CateCode=6002",
+        "children": [
+          {
+            "name": "핸드폰",
+            "url": "https://shop.kt.com/unify/mobile.do?&category=mobile",
+            "children": []
+          },
+          {
+            "name": "인기메뉴Apple 브랜드관",
+            "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2642",
+            "children": []
+          },
+          {
+            "name": "갤럭시 브랜드관",
+            "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2468",
+            "children": []
+          },
+          {
+            "name": "요금제",
+            "url": "https://product.kt.com/wDic/index.do?CateCode=6002",
+            "children": []
+          },
+          {
+            "name": "부가서비스",
+            "url": "https://product.kt.com/wDic/index.do?CateCode=6003",
+            "children": []
+          },
+          {
+            "name": "신규메뉴 인기메뉴KT 구독",
+            "url": "https://my.kt.com/product/OttSubscribeView.do",
+            "children": []
+          },
+          {
+            "name": "듀얼번호/eSIM",
+            "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1545",
+            "children": []
+          },
+          {
+            "name": "WiFi 이용안내",
+            "url": "https://wifi.kt.com/kt/kt_main.html",
+            "children": []
+          },
+          {
+            "name": "링투유/벨소리",
+            "url": "https://bellring.mobile.kt.com/web/index.do",
+            "children": [
+              {
+                "name": "링투유/벨소리 설정",
+                "url": "https://bellring.mobile.kt.com/web/index.do",
+                "children": []
+              },
+              {
+                "name": "링투유 인사말",
+                "url": "https://bellring.mobile.kt.com/web/mentIndex.do",
+                "children": []
+              },
+              {
+                "name": "오토체인지(오토링)",
+                "url": "https://bellring.mobile.kt.com/web/autoRingMonth.do",
+                "children": []
+              },
+              {
+                "name": "로밍링투유",
+                "url": "https://bellring.mobile.kt.com/web/roamingRing.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "추천앱",
+            "url": "https://fido.kt.com/ktauthIntro",
+            "children": [
+              {
+                "name": "PASS",
+                "url": "https://fido.kt.com/ktauthIntro",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "인터넷",
+        "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1452",
+        "children": [
+          {
+            "name": "Why KT 인터넷",
+            "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1452",
+            "children": [
+              {
+                "name": "소개",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1452",
+                "children": []
+              },
+              {
+                "name": "프리미엄급 인터넷",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1262",
+                "children": []
+              },
+              {
+                "name": "프리미엄급 인터넷 체험존",
+                "url": "https://product.kt.com/wDic/testZoneList.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "요금제",
+            "url": "https://product.kt.com/wDic/index.do?CateCode=6005",
+            "children": []
+          },
+          {
+            "name": "부가서비스",
+            "url": "https://product.kt.com/wDic/index.do?CateCode=6006",
+            "children": []
+          },
+          {
+            "name": "와이파이(WiFi)",
+            "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1533",
+            "children": [
+              {
+                "name": "소개",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1533",
+                "children": []
+              },
+              {
+                "name": "요금제",
+                "url": "https://product.kt.com/wDic/index.do?CateCode=6042",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "TV",
+        "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1163",
+        "children": [
+          {
+            "name": "Why Genie TV",
+            "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1163",
+            "children": [
+              {
+                "name": "소개",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1163",
+                "children": []
+              },
+              {
+                "name": "채널 편성표",
+                "url": "https://tv.kt.com/tv/channel/pChInfo.asp",
+                "children": []
+              },
+              {
+                "name": "VOD",
+                "url": "https://tv.kt.com/tv/vod/pVodInfo.asp",
+                "children": []
+              },
+              {
+                "name": "이벤트/공지",
+                "url": "https://tv.kt.com/tv/event/pEventInfo.asp",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "요금제",
+            "url": "https://product.kt.com/wDic/index.do?CateCode=6008",
+            "children": []
+          },
+          {
+            "name": "디바이스",
+            "url": "https://gigagenie.kt.com/main.do",
+            "children": []
+          },
+          {
+            "name": "지니 AI서비스",
+            "url": "https://gigagenie.kt.com/whyGenie.do",
+            "children": [
+              {
+                "name": "소개",
+                "url": "https://gigagenie.kt.com/whyGenie.do",
+                "children": []
+              },
+              {
+                "name": "서비스",
+                "url": "https://gigagenie.kt.com/whyGenieService.do",
+                "children": []
+              },
+              {
+                "name": "지니소식",
+                "url": "https://gigagenie.kt.com/whyGenieNews.do",
+                "children": []
+              },
+              {
+                "name": "자주하는 질문",
+                "url": "https://gigagenie.kt.com/whyGenieFaq.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "부가서비스",
+            "url": "https://product.kt.com/wDic/index.do?CateCode=6009",
+            "children": []
+          },
+          {
+            "name": "키즈랜드",
+            "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1243",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "결합",
+        "url": "https://product.kt.com/wDic/index.do?CateCode=6027",
+        "children": [
+          {
+            "name": "따로 살아도 가족결합",
+            "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1630",
+            "children": []
+          },
+          {
+            "name": "프리미엄 가족결합",
+            "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1193",
+            "children": []
+          },
+          {
+            "name": "프리미엄 싱글결합",
+            "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1267",
+            "children": []
+          },
+          {
+            "name": "총액 결합할인",
+            "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1133",
+            "children": []
+          },
+          {
+            "name": "정액 결합할인",
+            "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1640",
+            "children": []
+          },
+          {
+            "name": "결합상품",
+            "url": "https://product.kt.com/wDic/index.do?CateCode=6027",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "신규메뉴소상공인",
+        "url": "https://product.kt.com/wDic/soho/marketing.do?itemCode=sajangeasy",
+        "children": [
+          {
+            "name": "신규메뉴 인기메뉴사장이지",
+            "url": "https://product.kt.com/wDic/soho/marketing.do?itemCode=sajangeasy",
+            "children": []
+          },
+          {
+            "name": "하이오더",
+            "url": "https://product.kt.com/wDic/soho/marketing.do?ItemCode=highorder",
+            "children": []
+          },
+          {
+            "name": "KT 서빙로봇",
+            "url": "https://product.kt.com/wDic/soho/marketing.do?ItemCode=airobot",
+            "children": []
+          },
+          {
+            "name": "AI 전화",
+            "url": "https://product.kt.com/wDic/soho/marketing.do?ItemCode=aicall",
+            "children": []
+          },
+          {
+            "name": "기가아이즈",
+            "url": "https://shop.kt.com/wire/gigaeyes.do",
+            "children": []
+          },
+          {
+            "name": "인기메뉴통신상품",
+            "url": "https://product.kt.com/wDic/soho/index.do?CateCode=7002",
+            "children": []
+          },
+          {
+            "name": "매장솔루션",
+            "url": "https://product.kt.com/wDic/soho/index.do?CateCode=7008",
+            "children": []
+          },
+          {
+            "name": "으랏차차 패키지",
+            "url": "https://product.kt.com/wDic/soho/marketing.do?ItemCode=main",
+            "children": []
+          },
+          {
+            "name": "사장님 혜택존",
+            "url": "https://product.kt.com/wDic/soho/productDetail.do?ItemCode=1513",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "전화",
+        "url": "https://product.kt.com/wDic/index.do?CateCode=6010",
+        "children": [
+          {
+            "name": "일반전화",
+            "url": "https://product.kt.com/wDic/index.do?CateCode=6010",
+            "children": [
+              {
+                "name": "집전화/매장전화",
+                "url": "https://product.kt.com/wDic/index.do?CateCode=6011",
+                "children": []
+              },
+              {
+                "name": "인터넷전화",
+                "url": "https://product.kt.com/wDic/index.do?CateCode=6012",
+                "children": []
+              },
+              {
+                "name": "카드/콜렉트콜",
+                "url": "https://product.kt.com/wDic/index.do?CateCode=6014",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "국제전화",
+            "url": "https://product.kt.com/wDic/index.do?CateCode=6015",
+            "children": [
+              {
+                "name": "국제전화 이용방법",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1212",
+                "children": []
+              },
+              {
+                "name": "요금제",
+                "url": "https://product.kt.com/wDic/index.do?CateCode=6016",
+                "children": []
+              },
+              {
+                "name": "부가서비스",
+                "url": "https://product.kt.com/wDic/index.do?CateCode=6017",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "로밍",
+        "url": "https://globalroaming.kt.com/main",
+        "children": [
+          {
+            "name": "한눈에보기",
+            "url": "https://globalroaming.kt.com/main",
+            "children": []
+          },
+          {
+            "name": "국가별 로밍 안내",
+            "url": "https://globalroaming.kt.com/rate/rate",
+            "children": []
+          },
+          {
+            "name": "로밍 상품 정보",
+            "url": "https://globalroaming.kt.com/product/data/main",
+            "children": [
+              {
+                "name": "데이터",
+                "url": "https://globalroaming.kt.com/product/data/main",
+                "children": []
+              },
+              {
+                "name": "음성",
+                "url": "https://globalroaming.kt.com/product/voice/vru",
+                "children": []
+              },
+              {
+                "name": "로밍에그",
+                "url": "https://globalroaming.kt.com/product/data/ore",
+                "children": []
+              },
+              {
+                "name": "편리한 부가 기능",
+                "url": "https://globalroaming.kt.com/product/free/main",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "로밍 이용 꿀팁",
+            "url": "https://globalroaming.kt.com/info/all2",
+            "children": []
+          },
+          {
+            "name": "로밍 고객센터",
+            "url": "https://globalroaming.kt.com/center/internal",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "혜택",
+    "url": "https://membership.kt.com/main/MainInfo.do",
+    "children": [
+      {
+        "name": "멤버십 안내",
+        "url": "https://membership.kt.com/guide/join/JoinForm.do",
+        "children": [
+          {
+            "name": "My 멤버십",
+            "url": "https://my.kt.com/membership/MyMembershipInfo.do",
+            "children": []
+          },
+          {
+            "name": "멤버십 가입",
+            "url": "https://membership.kt.com/guide/join/JoinForm.do",
+            "children": []
+          },
+          {
+            "name": "멤버십 등급",
+            "url": "https://membership.kt.com/guide/system/SystemInfo.do",
+            "children": []
+          },
+          {
+            "name": "FAQ",
+            "url": "https://membership.kt.com/guide/faq/FAQList.do",
+            "children": []
+          },
+          {
+            "name": "더보기",
+            "url": "https://membership.kt.com/more/BizMembershipInfo.do",
+            "children": [
+              {
+                "name": "비즈멤버십",
+                "url": "https://membership.kt.com/more/BizMembershipInfo.do",
+                "children": []
+              },
+              {
+                "name": "마일리지",
+                "url": "https://membership.kt.com/more/MembershipMileageInfo.do",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "멤버십 할인",
+        "url": "https://membership.kt.com/discount/partner/PartnerList.do",
+        "children": [
+          {
+            "name": "제휴 브랜드",
+            "url": "https://membership.kt.com/discount/partner/PartnerList.do",
+            "children": []
+          },
+          {
+            "name": "통신미디어",
+            "url": "https://membership.kt.com/discount/comm/CommInfo.do",
+            "children": []
+          },
+          {
+            "name": "달달혜택",
+            "url": "https://membership.kt.com/discount/benefit/DaldalBenefit.do",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "VIP 멤버십",
+        "url": "https://membership.kt.com/vip/choice/VvipChoiceInfo.do",
+        "children": [
+          {
+            "name": "VVIP 초이스",
+            "url": "https://membership.kt.com/vip/choice/VvipChoiceInfo.do",
+            "children": []
+          },
+          {
+            "name": "VIP 초이스",
+            "url": "https://membership.kt.com/vip/choice/ChoiceInfo.do",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "영화/공연",
+        "url": "https://membership.kt.com/culture/movie/MovieInfo.do",
+        "children": [
+          {
+            "name": "영화예매",
+            "url": "https://membership.kt.com/culture/movie/MovieInfo.do",
+            "children": [
+              {
+                "name": "영화메인",
+                "url": "https://membership.kt.com/culture/movie/MovieInfo.do",
+                "children": []
+              },
+              {
+                "name": "영화예매",
+                "url": "https://membership.kt.com/culture/movie/BookingInfo.do",
+                "children": []
+              },
+              {
+                "name": "예매내역",
+                "url": "https://membership.kt.com/culture/movie/HistoryInfo.do",
+                "children": []
+              },
+              {
+                "name": "혜택/이용안내",
+                "url": "https://membership.kt.com/culture/movie/BenefitUseInfo.do",
+                "children": []
+              },
+              {
+                "name": "고객센터",
+                "url": "https://membership.kt.com/culture/movie/CustomerCenterInfo.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "공연예매",
+            "url": "https://membership.kt.com/culture/show/ShowInfo.do",
+            "children": [
+              {
+                "name": "공연예매 메인",
+                "url": "https://membership.kt.com/culture/show/ShowInfo.do",
+                "children": []
+              },
+              {
+                "name": "오늘의 할인",
+                "url": "https://membership.kt.com/culture/show/TodayDealInfo.do",
+                "children": []
+              },
+              {
+                "name": "공연예매",
+                "url": "https://membership.kt.com/culture/show/BookingInfo.do",
+                "children": []
+              },
+              {
+                "name": "VIP 공연 무료초대",
+                "url": "https://membership.kt.com/vip/lounge/InviteInfo.do",
+                "children": []
+              },
+              {
+                "name": "MY컬처/안내",
+                "url": "https://membership.kt.com/culture/show/MyCultureInfo.do",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "이용 혜택",
+        "url": "https://product.kt.com/benefit/membership/web/benefit_pkg.html",
+        "children": [
+          {
+            "name": "신규메뉴고객 보답 프로그램",
+            "url": "https://product.kt.com/benefit/membership/web/benefit_pkg.html",
+            "children": []
+          },
+          {
+            "name": "장기고객 혜택",
+            "url": "https://product.kt.com/benefit/membership/web/long_customer.html",
+            "children": []
+          },
+          {
+            "name": "데이터 혜택",
+            "url": "https://product.kt.com/benefit/membership/web/membership06.html",
+            "children": [
+              {
+                "name": "패밀리박스",
+                "url": "https://product.kt.com/benefit/membership/web/membership06.html",
+                "children": []
+              },
+              {
+                "name": "데이터룰렛",
+                "url": "https://product.kt.com/benefit/membership/web/membership03.html",
+                "children": []
+              },
+              {
+                "name": "데이터밀당",
+                "url": "https://product.kt.com/benefit/membership/web/membership05.html",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "가족 폰 이어쓰기",
+            "url": "https://product.kt.com/benefit/membership/web/family-phone.html",
+            "children": []
+          },
+          {
+            "name": "만 34세 이하 Y혜택",
+            "url": "https://product.kt.com/benefit/membership/web/membership21.html",
+            "children": [
+              {
+                "name": "Y박스",
+                "url": "https://product.kt.com/benefit/membership/web/membership21.html",
+                "children": []
+              },
+              {
+                "name": "Y덤",
+                "url": "https://product.kt.com/benefit/membership/web/y-bonus.html",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "TV 장기 혜택",
+            "url": "https://product.kt.com/benefit/membership/web/ollehtv_yonks.html",
+            "children": []
+          },
+          {
+            "name": "인터넷 할인 혜택",
+            "url": "https://product.kt.com/benefit/membership/web/membership09.html",
+            "children": []
+          },
+          {
+            "name": "가전구독",
+            "url": "https://shop.kt.com/rental/rentalMainView.do",
+            "children": []
+          },
+          {
+            "name": "복지할인 혜택",
+            "url": "https://product.kt.com/benefit/membership/web/welfare_sale.html",
+            "children": []
+          },
+          {
+            "name": "홈코노미 캠페인",
+            "url": "https://product.kt.com/benefit/membership/web/homeco.html",
+            "children": []
+          },
+          {
+            "name": "제휴 혜택",
+            "url": "https://product.kt.com/benefit/membership/web/card.html",
+            "children": [
+              {
+                "name": "제휴 카드",
+                "url": "https://product.kt.com/benefit/membership/web/card.html",
+                "children": []
+              },
+              {
+                "name": "제휴 상조",
+                "url": "https://product.kt.com/benefit/membership/web/etc.html",
+                "children": []
+              },
+              {
+                "name": "포인트 혜택",
+                "url": "https://product.kt.com/benefit/membership/web/point.html",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "해외여행 혜택",
+            "url": "https://globalroaming.kt.com/benefit/main",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "구매 혜택",
+        "url": "https://shop.kt.com/deal/deal5g.do?dwt=tue#freeprice",
+        "children": [
+          {
+            "name": "특가 혜택",
+            "url": "https://shop.kt.com/deal/deal5g.do?dwt=tue#freeprice",
+            "children": [
+              {
+                "name": "0원 특가",
+                "url": "https://shop.kt.com/deal/deal5g.do?dwt=tue#freeprice",
+                "children": []
+              },
+              {
+                "name": "통큰할인 특가",
+                "url": "https://shop.kt.com/deal/deal5g.do?dwt=tue#soldout",
+                "children": []
+              },
+              {
+                "name": "인터넷/TV 할인 특가",
+                "url": "https://shop.kt.com/deal/deal5g.do#direct",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "인터넷/TV 가입 사은품 안내",
+            "url": "https://shop.kt.com/wire/halfPricList.do",
+            "children": []
+          },
+          {
+            "name": "핸드폰 가입 쿠폰 혜택",
+            "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1662",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "이벤트/핫딜",
+        "url": "https://event.kt.com/html/event/ongoing_event_list.html",
+        "children": [
+          {
+            "name": "이벤트",
+            "url": "https://event.kt.com/html/event/ongoing_event_list.html",
+            "children": [
+              {
+                "name": "진행중인 이벤트",
+                "url": "https://event.kt.com/html/event/ongoing_event_list.html",
+                "children": []
+              },
+              {
+                "name": "선호번호 이벤트",
+                "url": "https://my.kt.com/etc/FavorNoInfo.do",
+                "children": []
+              },
+              {
+                "name": "LTE 데이터 룰렛",
+                "url": "https://my.kt.com/etc/DataRouletteInfo.do",
+                "children": []
+              },
+              {
+                "name": "당첨자 발표",
+                "url": "https://event.kt.com/html/event/winners_list.html",
+                "children": []
+              },
+              {
+                "name": "지난 이벤트",
+                "url": "https://event.kt.com/html/event/past_event_list.html",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "Shop 기획전",
+            "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR05",
+            "children": []
+          },
+          {
+            "name": "핫딜",
+            "url": "https://hotdeal.kt.com",
+            "children": []
+          },
+          {
+            "name": "5시 핫픽",
+            "url": "https://shop.kt.com/deal/pick.do",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "고객지원",
+    "url": "https://help.kt.com/main.jsp",
+    "children": [
+      {
+        "name": "신규메뉴안전한 통신생활",
+        "url": "https://inside.kt.com/html/safety/notice_list.html",
+        "children": [
+          {
+            "name": "통신사기주의보",
+            "url": "https://inside.kt.com/html/safety/notice_list.html",
+            "children": []
+          },
+          {
+            "name": "스팸 차단 서비스",
+            "url": "https://spamfilter.mobile.kt.com/safety.do",
+            "children": []
+          },
+          {
+            "name": "신규메뉴안심 QR",
+            "url": "https://inside.kt.com/html/safety/secure_QR.html",
+            "children": []
+          },
+          {
+            "name": "스미싱 지킴이",
+            "url": "https://inside.kt.com/html/safety/smishing.html",
+            "children": []
+          },
+          {
+            "name": "추천 AI 안심 부가서비스",
+            "url": "https://inside.kt.com/html/safety/recommended_relax.html",
+            "children": []
+          },
+          {
+            "name": "두낫콜 서비스",
+            "url": "https://inside.kt.com/html/safety/donotcall_intro.html",
+            "children": []
+          },
+          {
+            "name": "이용자피해예방 가이드",
+            "url": "https://inside.kt.com/html/privacy/privacy01.html",
+            "children": []
+          },
+          {
+            "name": "본인전송 요구권",
+            "url": "https://help.kt.com/communication/DataTransfer.do",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "매장/고객센터 안내",
+        "url": "https://help.kt.com/store/KtStoreSearch.do",
+        "children": [
+          {
+            "name": "매장 찾기",
+            "url": "https://help.kt.com/store/KtStoreSearch.do",
+            "children": []
+          },
+          {
+            "name": "고객센터안내",
+            "url": "https://help.kt.com/store/KtCustCenter.do",
+            "children": []
+          },
+          {
+            "name": "제조사별 A/S센터 안내",
+            "url": "https://help.kt.com/asreq/MobileAsCenterInfo.do",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "온라인문의",
+        "url": "https://ermsweb.kt.com/pc/faq/faqList.jsp",
+        "children": [
+          {
+            "name": "자주하는 질문",
+            "url": "https://ermsweb.kt.com/pc/faq/faqList.do",
+            "children": []
+          },
+          {
+            "name": "이메일 상담",
+            "url": "https://ermsweb.kt.com/pc/qna/qnaWrite.do",
+            "children": []
+          },
+          {
+            "name": "칭찬합니다",
+            "url": "https://ermsweb.kt.com/pc/compliment/complimentWrite.do",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "셀프진단 및 A/S신청",
+        "url": "https://help.kt.com/asreq/HomeAsReqStatusInfo.do",
+        "children": [
+          {
+            "name": "인터넷/TV 고장진단",
+            "url": "https://help.kt.com/asreq/HomeAsReqStatusInfo.do",
+            "children": []
+          },
+          {
+            "name": "간편한 셀프 해결",
+            "url": "https://help.kt.com/servicetip/ServiceTipInfo.do",
+            "children": []
+          },
+          {
+            "name": "홈상품 A/S신청 및 변경",
+            "url": "https://help.kt.com/asreq/HomeAsReqStatus.do",
+            "children": []
+          },
+          {
+            "name": "셀프개통",
+            "url": "https://help.kt.com/asreq/SelfOpenInfo.do",
+            "children": []
+          },
+          {
+            "name": "인터넷 속도측정",
+            "url": "https://speed.kt.com/speed/speedtest/introduce.asp",
+            "children": []
+          },
+          {
+            "name": "서비스 가능지역 찾기",
+            "url": "https://help.kt.com/serviceinfo/SearchHomePhone.do",
+            "children": []
+          },
+          {
+            "name": "서비스 커버리지",
+            "url": "https://nqi.kt.com/KTCVRG/ollehIntro",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "휴대폰 분실 신고/해제",
+        "url": "https://help.kt.com/lostphone/LostReportOrCancel.do",
+        "children": [
+          {
+            "name": "분실 신고/해제",
+            "url": "https://help.kt.com/lostphone/LostReportOrCancel.do",
+            "children": []
+          },
+          {
+            "name": "분실휴대폰 위치 찾기",
+            "url": "https://help.kt.com/lostphone/LocatingLostPhone.do",
+            "children": []
+          },
+          {
+            "name": "임대폰 신청",
+            "url": "https://help.kt.com/lostphone/ApplyRentalPhone.do",
+            "children": []
+          },
+          {
+            "name": "단말보험 보상받기",
+            "url": "https://help.kt.com/lostphone/CompDeviceInsurance.do",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "공지/이용안내",
+        "url": "https://inside.kt.com/html/notice/notice_list.html",
+        "children": [
+          {
+            "name": "공지사항",
+            "url": "https://inside.kt.com/html/notice/notice_list.html",
+            "children": []
+          },
+          {
+            "name": "통신서비스 중단/작업 공지",
+            "url": "https://inside.kt.com/html/notice/net_notice_list.html",
+            "children": []
+          },
+          {
+            "name": "서비스 안내",
+            "url": "https://help.kt.com/serviceinfo/ServiceJoinGuide.do",
+            "children": []
+          },
+          {
+            "name": "Shop 이용안내",
+            "url": "https://shop.kt.com/support/shopMobileGuide.do",
+            "children": [
+              {
+                "name": "핸드폰 구매 이용안내",
+                "url": "https://shop.kt.com/support/shopMobileGuide.do",
+                "children": []
+              },
+              {
+                "name": "인터넷/TV 가입 이용안내",
+                "url": "https://shop.kt.com/support/shopInternetTvGuide.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "신청서/자료실",
+            "url": "https://help.kt.com/serviceinfo/UseRegUseInfo.do",
+            "children": [
+              {
+                "name": "신청서 다운로드",
+                "url": "https://help.kt.com/serviceinfo/UseRegUseInfo.do",
+                "children": []
+              },
+              {
+                "name": "사용설명서 자료실",
+                "url": "https://help.kt.com/serviceinfo/ManualDownloadInfo.do",
+                "children": []
+              },
+              {
+                "name": "접속설치 프로그램",
+                "url": "https://help.kt.com/serviceinfo/EggSWDownloadInfo.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "신규메뉴장애인 전용 서비스",
+            "url": "https://help.kt.com/disabledInfo/DisabledProdGuide1.do",
+            "children": [
+              {
+                "name": "장애인상품 가입안내",
+                "url": "https://help.kt.com/disabledInfo/DisabledProdGuide1.do",
+                "children": []
+              },
+              {
+                "name": "장애인용 서비스 이용안내",
+                "url": "https://help.kt.com/disabledInfo/DisabledServiceGuide1.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "웹 접근성 가이드",
+            "url": "https://inside.kt.com/html/accessibility/webHelp_01.html",
+            "children": []
+          },
+          {
+            "name": "통신장애 손해배상 안내",
+            "url": "https://help.kt.com/serviceinfo/CommTrobReptnInfo.do",
+            "children": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "마이",
+    "url": "https://my.kt.com/main.jsp",
+    "children": [
+      {
+        "name": "가입/이용",
+        "url": "https://my.kt.com/myinfo/MobileMyInfoDetail.do",
+        "children": [
+          {
+            "name": "가입정보",
+            "url": "https://my.kt.com/myinfo/MobileMyInfoDetail.do",
+            "children": []
+          },
+          {
+            "name": "가입정보 변경",
+            "url": "https://my.kt.com/contract/MoPhoneApplicationInfo.do",
+            "children": [
+              {
+                "name": "요금할인 재약정",
+                "url": "https://my.kt.com/contract/MoPhoneApplicationInfo.do",
+                "children": []
+              },
+              {
+                "name": "명의변경",
+                "url": "https://my.kt.com/myproduct/TransferInfo.do",
+                "children": []
+              },
+              {
+                "name": "일시정지",
+                "url": "https://my.kt.com/pause/MobilePauseInfo.do",
+                "children": []
+              },
+              {
+                "name": "분실신고/해제",
+                "url": "https://my.kt.com/lostas/MoLostAddInfo.do",
+                "children": []
+              },
+              {
+                "name": "휴대폰 사용자 등록",
+                "url": "https://my.kt.com/number/MobileUserRegistInfo.do",
+                "children": []
+              },
+              {
+                "name": "번호변경",
+                "url": "https://my.kt.com/number/MobileNumberChangeInfo.do",
+                "children": []
+              },
+              {
+                "name": "설치장소 변경",
+                "url": "https://my.kt.com/install/InternetAddressChangeInfo.do",
+                "children": []
+              },
+              {
+                "name": "홈상품 해지신청",
+                "url": "https://my.kt.com/myproduct/NonSignTerminationInfo.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "이용량/이용내역",
+            "url": "https://my.kt.com/usage/MoUsageList.do",
+            "children": [
+              {
+                "name": "이용량 조회/충전",
+                "url": "https://my.kt.com/usage/MoUsageList.do",
+                "children": []
+              },
+              {
+                "name": "알 조회/충전",
+                "url": "https://my.kt.com/usage/MobileAlSrch.do",
+                "children": []
+              },
+              {
+                "name": "VOD 이용내역",
+                "url": "https://my.kt.com/usage/TvVodUsageList.do",
+                "children": []
+              },
+              {
+                "name": "통화내역 조회",
+                "url": "https://my.kt.com/usage/MoTelCallInfo.do",
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "요금/서비스",
+        "url": "https://my.kt.com/product/MyMobilePriceInfo.do",
+        "children": [
+          {
+            "name": "내 모바일 요금제",
+            "url": "https://my.kt.com/product/MyMobilePriceInfo.do",
+            "children": []
+          },
+          {
+            "name": "요금조회",
+            "url": "https://my.kt.com/bill/BillChargeTotalList.do",
+            "children": [
+              {
+                "name": "요금명세서",
+                "url": "https://my.kt.com/bill/BillChargeTotalList.do",
+                "children": []
+              },
+              {
+                "name": "명세서 재발송",
+                "url": "https://my.kt.com/statement/StatementResendList.do",
+                "children": []
+              },
+              {
+                "name": "모바일 실시간요금",
+                "url": "https://my.kt.com/usage/MobileRealtimeFeeList.do",
+                "children": []
+              },
+              {
+                "name": "휴대폰결제 내역",
+                "url": "https://my.kt.com/usage/MobileSmallFeeList.do",
+                "children": []
+              },
+              {
+                "name": "콘텐츠 이용료",
+                "url": "https://my.kt.com/usage/MobileContentsFeeList.do",
+                "children": []
+              },
+              {
+                "name": "상품별 요금",
+                "url": "https://my.kt.com/bill/MoBillChargeList.do",
+                "children": []
+              },
+              {
+                "name": "자녀요금",
+                "url": "https://my.kt.com/legal/LegalAdultGet.do",
+                "children": []
+              },
+              {
+                "name": "선불요금",
+                "url": "https://my.kt.com/advance/MobileSimpleChargeInfo.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "요금납부",
+            "url": "https://my.kt.com/payment/RealTimePayGet.do",
+            "children": [
+              {
+                "name": "즉시납부",
+                "url": "https://my.kt.com/payment/RealTimePayGet.do",
+                "children": []
+              },
+              {
+                "name": "납부방법 변경",
+                "url": "https://my.kt.com/statement/PayWayGet.do",
+                "children": []
+              },
+              {
+                "name": "명세서 정보변경",
+                "url": "https://my.kt.com/statement/StatementWayGetInfo.do",
+                "children": []
+              },
+              {
+                "name": "납부확인서/스마트 영수증",
+                "url": "https://my.kt.com/payment/BillPaymentList.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "요금제변경",
+            "url": "https://my.kt.com/product/MobilePriceView.do",
+            "children": []
+          },
+          {
+            "name": "부가서비스 추가 신청",
+            "url": "https://my.kt.com/product/MobileAddedProdView.do",
+            "children": []
+          },
+          {
+            "name": "부가서비스 조회/변경",
+            "url": "https://my.kt.com/product/MobileUseAddedProdView.do",
+            "children": []
+          },
+          {
+            "name": "단말보험/교체 프로그램",
+            "url": "https://my.kt.com/contract/MoPhoneCare.do",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "멤버십/혜택",
+        "url": "https://my.kt.com/membership/MyMembershipInfo.do",
+        "children": [
+          {
+            "name": "My 멤버십",
+            "url": "https://my.kt.com/membership/MyMembershipInfo.do",
+            "children": []
+          },
+          {
+            "name": "My 포인트",
+            "url": "https://my.kt.com/mypoint/GreenPhonePointInfo.do",
+            "children": []
+          },
+          {
+            "name": "My 쿠폰",
+            "url": "https://my.kt.com/myproduct/PkgCouponList.do",
+            "children": []
+          }
+        ]
+      },
+      {
+        "name": "마이샵",
+        "url": "https://shop.kt.com/unify/orderHistory.do",
+        "children": [
+          {
+            "name": "주문내역",
+            "url": "https://shop.kt.com/unify/orderHistory.do",
+            "children": [
+              {
+                "name": "통신상품",
+                "url": "https://shop.kt.com/unify/orderHistory.do",
+                "children": []
+              },
+              {
+                "name": "가전구독",
+                "url": "https://shop.kt.com/person/wireRentalOrderList.do",
+                "children": []
+              },
+              {
+                "name": "액세서리",
+                "url": "https://shop.kt.com/person/orderHistoryMain.do?thisHref=Acces",
+                "children": []
+              },
+              {
+                "name": "USIM 구매",
+                "url": "https://shop.kt.com/direct/quickMyshop.do",
+                "children": []
+              },
+              {
+                "name": "그린폰 거래",
+                "url": "https://shop.kt.com/person/orderHistoryMain.do?thisHref=GreenPhone",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "장바구니",
+            "url": "https://shop.kt.com/uniteOrder/orderCartView.do",
+            "children": [
+              {
+                "name": "통신상품",
+                "url": "https://shop.kt.com/uniteOrder/orderCartView.do",
+                "children": []
+              },
+              {
+                "name": "액세서리",
+                "url": "https://shop.kt.com/accessory/accsCartProdList.do",
+                "children": []
+              }
+            ]
+          },
+          {
+            "name": "찜 상품",
+            "url": "https://shop.kt.com/person/mobileCartProdList.do",
+            "children": []
+          },
+          {
+            "name": "최근 본 상품",
+            "url": "https://shop.kt.com/person/recentlyViewedProd.do",
+            "children": []
+          },
+          {
+            "name": "포인트/쿠폰",
+            "url": "https://shop.kt.com/person/couponPointMain.do",
+            "children": []
+          },
+          {
+            "name": "구매후기",
+            "url": "https://shop.kt.com/person/reviewList.do",
+            "children": []
+          }
+        ]
+      }
+    ]
+  }
+]
