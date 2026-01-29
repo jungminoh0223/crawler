@@ -68,10 +68,6 @@
                 "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00074993"
               },
               {
-                "name": "레드미 노트 14 Pro 5G",
-                "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00073097"
-              },
-              {
                 "name": "갤럭시 A17",
                 "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00076372"
               },
@@ -82,10 +78,6 @@
               {
                 "name": "iPhone 16 Pro",
                 "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00072553"
-              },
-              {
-                "name": "iPhone 16 Pro Max",
-                "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00072554"
               },
               {
                 "name": "iPhone 16e",
@@ -116,12 +108,12 @@
                 "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00074727"
               },
               {
-                "name": "갤럭시 Z Fold5",
-                "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00067147"
-              },
-              {
                 "name": "moto g56 5G",
                 "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00075507"
+              },
+              {
+                "name": "iPhone 15 Plus",
+                "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00067973"
               },
               {
                 "name": "moto g34 5G",
@@ -602,10 +594,6 @@
                     "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2480"
                   },
                   {
-                    "name": "주말 럭키딜",
-                    "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2633"
-                  },
-                  {
                     "name": "인터넷, TV 다이렉트 할인",
                     "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1017"
                   },
@@ -766,7 +754,7 @@
                     "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2360"
                   },
                   {
-                    "name": "가전특가 이벤트",
+                    "name": "가전구독 출시 이벤트",
                     "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2391"
                   },
                   {
@@ -856,6 +844,18 @@
             "name": "k-tmi 웹진",
             "url": "https://shop.kt.com/unify/webzineList.do",
             "children": [
+              {
+                "name": "2026. 01매달 새로워지는 당신의 갤럭시요즘케이티KT닷컴 갤럭시 브랜드관 돋보기",
+                "url": "https://shop.kt.com/unify/webzineView03.do?page=요즘케이티&month=01&year=26"
+              },
+              {
+                "name": "2026. 01겨울엔 산으로주말.zip",
+                "url": "https://shop.kt.com/unify/webzineView01.do?page=주말zip&month=01&year=26"
+              },
+              {
+                "name": "2026. 01헌 집 줄게 새집 다오챗KT닷컴",
+                "url": "https://shop.kt.com/unify/webzineView02.do?page=챗KT닷컴&month=01&year=26"
+              },
               {
                 "name": "2025. 10내 손 안의 오락실요즘케이티",
                 "url": "https://shop.kt.com/unify/webzineView03.do?page=요즘케이티&month=10&year=25"
@@ -1311,10 +1311,6 @@
                 "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00074993"
               },
               {
-                "name": "레드미 노트 14 Pro 5G",
-                "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00073097"
-              },
-              {
                 "name": "갤럭시 A17",
                 "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00076372"
               },
@@ -1325,10 +1321,6 @@
               {
                 "name": "iPhone 16 Pro",
                 "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00072553"
-              },
-              {
-                "name": "iPhone 16 Pro Max",
-                "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00072554"
               },
               {
                 "name": "iPhone 16e",
@@ -1359,12 +1351,12 @@
                 "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00074727"
               },
               {
-                "name": "갤럭시 Z Fold5",
-                "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00067147"
-              },
-              {
                 "name": "moto g56 5G",
                 "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00075507"
+              },
+              {
+                "name": "iPhone 15 Plus",
+                "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00067973"
               },
               {
                 "name": "moto g34 5G",
@@ -2109,7 +2101,272 @@
           {
             "name": "Shop 기획전",
             "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR05",
-            "children": []
+            "children": [
+              {
+                "name": "프리미엄 액티비티 패키지 프로모션",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2713"
+              },
+              {
+                "name": "지니 TV 디즈니+ 모든G 출시 이벤트!",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2685"
+              },
+              {
+                "name": "폼폼푸린 키즈폰 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1622"
+              },
+              {
+                "name": "iPhone 17 시리즈 구매 혜택",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2720"
+              },
+              {
+                "name": "기간한정! 요고 61 혜택",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2621"
+              },
+              {
+                "name": "Galaxy Z Fold7",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2615"
+              },
+              {
+                "name": "Apple 브랜드관",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2642"
+              },
+              {
+                "name": "갤럭시 브랜드관",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2468"
+              },
+              {
+                "name": "핸드폰 구매 시 신형 워치 무료!",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2638"
+              },
+              {
+                "name": "갤럭시 S25 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2510"
+              },
+              {
+                "name": "KT닷컴 창고대방출 BIG SALE!",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2697"
+              },
+              {
+                "name": "기간한정! 요고 42 혜택",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2563"
+              },
+              {
+                "name": "키즈 유심 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2709"
+              },
+              {
+                "name": "친구 초대 이벤트",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2574"
+              },
+              {
+                "name": "7% 추가요금 할인!",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2465"
+              },
+              {
+                "name": "인터넷, TV도 무약정으로 요고뭉치 결합!",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2389"
+              },
+              {
+                "name": "모토로라 edge70 출시 기념 퀴즈 이벤트",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2731"
+              },
+              {
+                "name": "지금 KT로 환승하세요",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2406"
+              },
+              {
+                "name": "하이마트 KT닷컴 제휴 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2480"
+              },
+              {
+                "name": "인터넷, TV 다이렉트 할인",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1017"
+              },
+              {
+                "name": "KT 인터넷 요금 0원",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2672"
+              },
+              {
+                "name": "LG Easy TV AI 출시 이벤트",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2691"
+              },
+              {
+                "name": "우리집 필수템 홈캠 0원",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2652"
+              },
+              {
+                "name": "365일 24시간 언제든 빠른신청 빠른개통",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2640"
+              },
+              {
+                "name": "KT 가전구독 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2527"
+              },
+              {
+                "name": "KT 와이파이 7D 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2395"
+              },
+              {
+                "name": "알뜰할인 출시",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2362"
+              },
+              {
+                "name": "지니TV유튜브 프리미엄 요금제 출시",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2584"
+              },
+              {
+                "name": "중고폰 보상 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2315"
+              },
+              {
+                "name": "요고 디바이스 할인 혜택 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2402"
+              },
+              {
+                "name": "더 좋아진 요고 요금제 혜택!",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2388"
+              },
+              {
+                "name": "KT 인터넷팩",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2255"
+              },
+              {
+                "name": "MVNO 알뜰폰 고객 인터넷+TV 가입",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2292"
+              },
+              {
+                "name": "자급제폰 x 요고 요금제",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2321"
+              },
+              {
+                "name": "지니 TV 올인원 사운드바 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2155"
+              },
+              {
+                "name": "대형TV 특별전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1948"
+              },
+              {
+                "name": "Special Internet Options",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2558"
+              },
+              {
+                "name": "KT 듀얼번호",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1987"
+              },
+              {
+                "name": "GENIE TV 론칭",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2013"
+              },
+              {
+                "name": "요고 포인트 혜택 추가 오픈",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2673"
+              },
+              {
+                "name": "TV하나더 요금반값",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1306"
+              },
+              {
+                "name": "결제안심 인터넷",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1915"
+              },
+              {
+                "name": "와이파이 공유기",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1876"
+              },
+              {
+                "name": "KT닷컴 핸드폰 가입 꿀팁",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1449"
+              },
+              {
+                "name": "프리미엄 싱글결합",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1725"
+              },
+              {
+                "name": "인터넷속도 업그레이드 이벤트 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2361"
+              },
+              {
+                "name": "선불인터넷 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1171"
+              },
+              {
+                "name": "셋톱박스4 출시 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2482"
+              },
+              {
+                "name": "지니 TV 셋톱박스 A 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1769"
+              },
+              {
+                "name": "더 강력해진 0원폰!",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=967"
+              },
+              {
+                "name": "쿠폰팩/액세서리 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1662"
+              },
+              {
+                "name": "안심체인지 중고폰 매입방법",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1582"
+              },
+              {
+                "name": "토탈안심 인터넷 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1793"
+              },
+              {
+                "name": "원스톱 전환서비스 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1534"
+              },
+              {
+                "name": "지니 TV 키즈랜드팩 초이스",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1495"
+              },
+              {
+                "name": "인터넷패밀리 나는반값",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1297"
+              },
+              {
+                "name": "지니 TV 탭3 출시",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1650"
+              },
+              {
+                "name": "이마트 유심",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2359"
+              },
+              {
+                "name": "CU 유심",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2360"
+              },
+              {
+                "name": "가전구독 출시 이벤트",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2391"
+              },
+              {
+                "name": "하이오더 스마트렌탈 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2433"
+              },
+              {
+                "name": "쓰면 안다 하이오더",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2632"
+              },
+              {
+                "name": "가전구독 초이스 출시",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2598"
+              },
+              {
+                "name": "홈캠 안심 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2523"
+              },
+              {
+                "name": "따로 살아도 가족결합 기획전",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2524"
+              },
+              {
+                "name": "지니TV 셋톱박스 프로모션",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2578"
+              }
+            ]
           },
           {
             "name": "핫딜",
