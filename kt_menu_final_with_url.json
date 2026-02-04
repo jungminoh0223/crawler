@@ -195,7 +195,7 @@
           },
           {
             "name": "5시 핫픽",
-            "url": "https://shop.kt.com/deal/pick.do",
+            "url": "https://plus.kt.com",
             "children": []
           },
           {
@@ -823,7 +823,7 @@
                 "children": []
               },
               {
-                "name": "카드/콜렉트콜",
+                "name": "수신자 부담",
                 "url": "https://product.kt.com/wDic/index.do?CateCode=6014",
                 "children": []
               }
@@ -1250,7 +1250,7 @@
           },
           {
             "name": "5시 핫픽",
-            "url": "https://shop.kt.com/deal/pick.do",
+            "url": "https://plus.kt.com",
             "children": []
           }
         ]

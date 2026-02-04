@@ -23,6 +23,7 @@ kt_menu_full_dom.html      kt_menu_final_with_url.json    kt_menu_crawled.json
 | `kt_menu_parse.py` | KT 홈페이지 접속 → 메뉴 hover/click → DOM 저장 |
 | `kt_menu_crawler.py` | DOM에서 메뉴 트리 구조 파싱 → JSON 변환 |
 | `kt_extract_submenu_from_pages.py` | 각 메뉴 URL 방문 → 하위 링크 수집 |
+| `kt_crawl_single_url.py` | 단일 URL 테스트/디버깅 (상세 로그 출력) |
 
 | 데이터 파일 | 설명 |
 |-------------|------|
@@ -71,12 +72,6 @@ python kt_extract_submenu_from_pages.py
 - 각 페이지에서 하위 링크 추출
 - `kt_menu_crawled.json` 저장
 
-### 중단하려면
-
-`Ctrl+C` - 현재까지 진행 상황이 자동 저장됩니다.
-
----
-
 ## 작동 원리
 
 ### 1단계: DOM 추출 (`kt_menu_dom_extract.py`)
@@ -119,10 +114,16 @@ python kt_extract_submenu_from_pages.py
 
 **추출 우선순위:**
 
+0. **titled iframe** - `iframe[title]` 속성이 있는 iframe에서 추출 (페이지네이션 포함)
 1. **상품 목록** - `<input name="prodAttr">` 태그
 2. **게시판 링크** - URL에 webzine, board, notice 포함 시
 3. **탭 메뉴** - 이미지에 'tab' 포함된 링크
 4. **iframe 목록** - 페이지네이션 있는 목록
+
+**자동 필터링:**
+
+`filter_by_dominant_pattern()` 함수가 가장 많이 나온 URL 패턴만 유지합니다.
+예: `olhsPlan.do` 66개, `planDispView.do` 14개 → `olhsPlan.do` 66개만 유지
 
 **결과 예시:**
 
@@ -220,6 +221,7 @@ INPUT = 'kt_menu_crawled.json'  # 출력 파일을 입력으로
 ├── kt_menu_dom_extract.py           # 1단계: DOM 추출
 ├── kt_menu_parse.py                 # 2단계: 메뉴 파싱
 ├── kt_extract_submenu_from_pages.py # 3단계: 하위 링크 수집
+├── kt_crawl_single_url.py           # 단일 URL 테스트/디버깅용
 ├── kt_menu_full_dom.html            # DOM 데이터
 ├── kt_menu_final_with_url.json      # 메뉴 트리 (빈 children)
 ├── kt_menu_crawled.json             # 메뉴 트리 (채워진 children)

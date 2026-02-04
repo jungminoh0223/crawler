@@ -2,11 +2,8 @@ import json
 import asyncio
 import logging
 import re
-from typing import List, Dict
-from pathlib import Path
-from datetime import datetime
-from collections import Counter
 from urllib.parse import urlparse
+from collections import Counter
 from bs4 import BeautifulSoup
 from playwright.async_api import async_playwright
 
@@ -15,21 +12,21 @@ logger = logging.getLogger(__name__)
 
 # 스킵할 URL 패턴
 SKIP_CRAWL_PATTERNS = [
-    'olhsPlan.do',          # 브랜드관 (기획전 상세)
-    'phoneView.do',         # 중고폰 보상
-    'whyKTSIM.do',          # 인기 추천 요금제
-    '/direct/',             # 다이렉트 페이지
-    'yogoEvent.do',         # 요고 이벤트
-    '/wire/',               # 유선(인터넷/TV) 전체
-    'soho/marketing.do',    # 소상공인 마케팅 상세
-    'soho/productDetail.do',# 소상공인 상품 상세
-    '/benefit/',            # 혜택 랜딩 페이지
-    'hotdeal.kt.com',       # 핫딜 쇼핑몰
-    '/deal/',               # 5시 핫픽, 출석체크 등 이벤트
-    '/rental/',             # 가전구독
-    '/recommend/',          # 나의 추천코드 등 개인 페이지
-    'offerwall.do',         # 캐시리워드
-    'supportAmtList.do',    # 휴대폰 지원금 안내
+    'olhsPlan.do',
+    'phoneView.do',
+    'whyKTSIM.do',
+    '/direct/',
+    'yogoEvent.do',
+    '/wire/',
+    'soho/marketing.do',
+    'soho/productDetail.do',
+    '/benefit/',
+    'hotdeal.kt.com',
+    '/deal/',
+    '/rental/',
+    '/recommend/',
+    'offerwall.do',
+    'supportAmtList.do',
 ]
 
 # 제외할 이름 패턴
@@ -59,11 +56,9 @@ def should_skip(url):
     return any(p in url for p in SKIP_CRAWL_PATTERNS)
 
 def is_kt_domain(url):
-    """kt.com 도메인인지 체크 (모든 서브도메인 허용)"""
     return url.startswith('http') and '.kt.com' in url
 
 def get_base_url(url):
-    """URL에서 도메인 부분만 추출"""
     parsed = urlparse(url)
     return f"{parsed.scheme}://{parsed.netloc}"
 
@@ -72,6 +67,7 @@ def is_excluded_name(name):
 
 def is_excluded_url(url):
     return any(p in url for p in EXCLUDE_URL_PATTERNS)
+
 
 def extract_links_from_soup(soup, base_url, min_count=1):
     """링크 추출"""
@@ -86,39 +82,39 @@ def extract_links_from_soup(soup, base_url, min_count=1):
             continue
         if is_excluded_url(href) or href in seen:
             continue
-        
+
         text = ''
-        
+
         # 1. .plan_tit em
         parent_li = a.find_parent('li')
         if parent_li:
             tit = parent_li.select_one('.plan_tit em')
             if tit:
                 text = tit.get_text(strip=True)
-        
+
         # 2. img alt
         if not text:
             img = a.find('img')
             if img:
                 text = img.get('alt', '').strip()
-        
+
         # 3. 링크 텍스트
         if not text:
             text = a.get_text(strip=True)
-        
+
         # 4. title 속성
         if not text:
             text = a.get('title', '').strip()
-        
+
         if not text or len(text) < 2 or is_excluded_name(text):
             continue
-        
+
         if len(text) > 150:
             text = text[:150] + '...'
-        
+
         seen.add(href)
         links.append({'name': text, 'url': href})
-    
+
     return links if len(links) >= min_count else []
 
 
@@ -159,7 +155,6 @@ async def extract_with_pagination(frame):
 
         count_before = len(all_links)
 
-        # projectList 안의 링크만(상품 추출)
         for li in soup.select('ul.projectList li'):
             a = li.select_one('a[href]')
             if not a:
@@ -170,8 +165,7 @@ async def extract_with_pagination(frame):
                 href = f"{base_url}{href}"
             if href in seen or is_excluded_url(href):
                 continue
-            
-            # 제목 추출
+
             tit = li.select_one('.plan_tit em')
             text = tit.get_text(strip=True) if tit else ''
             if not text:
@@ -179,30 +173,30 @@ async def extract_with_pagination(frame):
                 text = img.get('alt', '').strip() if img else ''
             if not text:
                 text = a.get_text(strip=True)
-            
+
             if text and len(text) >= 2:
                 seen.add(href)
                 all_links.append({'name': text, 'url': href})
-        
+
         added = len(all_links) - count_before
         logger.info(f"   → +{added}개 (총 {len(all_links)}개)")
-        
+
         if added == 0 and page_num > 1:
             break
-        
+
         next_btn = await frame.query_selector(f'a[pageno="{page_num + 1}"]')
         if not next_btn:
             break
-        
+
         await next_btn.click()
         await frame.page.wait_for_timeout(2000)
         page_num += 1
-    
+
     return all_links
 
 
 async def extract_with_pagination_generic(frame):
-    """범용 페이지네이션 처리 (모든 li a를 수집)"""
+    """범용 페이지네이션 처리"""
     all_links, seen = [], set()
     page_num = 1
     base_url = get_base_url(frame.url)
@@ -213,7 +207,6 @@ async def extract_with_pagination_generic(frame):
         html = await frame.content()
         soup = BeautifulSoup(html, 'html.parser')
 
-        # 헤더/푸터/탭 제거
         for sel in ['#cfmClHeader', '#cfmClFooter', '#cfmClSkip', '.header', '.footer',
                     '.navigation', '.sidebar', '.banner', '.popup', '.overlay', '.sns-area', '.location',
                     '.gnb', '.lnb', '.snb', '.util', '.quick', '.ui-tab-lst', '.ui-tab-top-lst']:
@@ -336,6 +329,7 @@ async def extract_from_titled_iframe(page, iframe_title):
 
             next_btn = frame.locator(f'a[pageno="{page_num + 1}"]:not(.page)').first
             next_count = await next_btn.count()
+
             if next_count == 0:
                 next_btn = frame.locator(f'a[pageno="{page_num + 1}"]').first
                 next_count = await next_btn.count()
@@ -361,7 +355,7 @@ async def extract_from_titled_iframe(page, iframe_title):
 
 
 async def try_extract_from_iframes(page):
-    """iframe에서 목록 추출 (HTML 내용 기반)"""
+    """iframe에서 목록 추출"""
 
     # 1차: projectList + 페이지네이션 있는 iframe
     for i, frame in enumerate(page.frames):
@@ -378,7 +372,7 @@ async def try_extract_from_iframes(page):
         except:
             continue
 
-    # 2차: pageno가 있는 프레임 우선 처리 (게시판 목록)
+    # 2차: pageno가 있는 프레임 우선 처리
     for i, frame in enumerate(page.frames):
         try:
             html = await frame.content()
@@ -435,12 +429,12 @@ async def extract_tabs(page):
             href = f"{base_url}{href}"
         if not href.startswith('http') or href in seen:
             continue
-        
+
         name = img.get('alt', '') or link.get_text(strip=True)
         if name:
             seen.add(href)
             tabs.append({'name': name, 'url': href})
-    
+
     if len(tabs) >= 2:
         logger.info(f"🏷️ 탭 발견: {len(tabs)}개")
         return tabs
@@ -496,7 +490,6 @@ async def extract_products(page):
         added = len(products) - count_before
         logger.info(f"   → 페이지 {page_num}: +{added}개 (총 {len(products)}개)")
 
-        # 다음 페이지 버튼 찾기
         next_btn = page.locator(f'a[pageno="{page_num + 1}"]').first
         next_count = await next_btn.count()
 
@@ -548,7 +541,7 @@ async def crawl_page(url):
 
     try:
         async with async_playwright() as p:
-            browser = await p.chromium.launch(headless=True)
+            browser = await p.chromium.launch(headless=False)
             page = await browser.new_page()
             await page.goto(url, wait_until='domcontentloaded', timeout=30000)
             await page.wait_for_timeout(5000)
@@ -597,113 +590,71 @@ async def crawl_page(url):
             await browser.close()
             logger.info("⚠️ 추출 대상 없음")
             return {'success': True, 'links': []}
-    
+
     except Exception as e:
         logger.error(f"❌ 크롤링 실패: {e}")
         return {'success': False, 'error': str(e), 'links': []}
 
 
-MENU_TREE = []
-
-
-def save_progress(path):
-    with open(path, 'w', encoding='utf-8') as f:
-        json.dump(MENU_TREE, f, ensure_ascii=False, indent=2)
-
-
-async def process_node(menu, output_path, hierarchy, delay=1.0):
-    name = menu.get('name', '')
-    url = menu.get('url', '')
-    children = menu.get('children', [])
-    current = hierarchy + [name]
-    
-    if isinstance(children, list) and not children and url.startswith('http'):
-        logger.info(f"🔍 [{len(current)}depth] {' > '.join(current)}")
-        logger.info(f"   URL: {url}")
-        
-        result = await crawl_page(url)
-        
-        if result['success']:
-            if result.get('skipped'):
-                logger.info("⏭️ 스킵됨")
-                menu['children'] = []
-            else:
-                links = result.get('links', [])
-                menu['children'] = [{'name': l['name'], 'url': l['url']} for l in links]
-                if links:
-                    logger.info(f"✅ 완료 ({len(links)}개)")
-                else:
-                    logger.info("⚠️ 추출 결과 없음")
-        else:
-            logger.error(f"❌ 실패: {result.get('error')}")
-            menu['children'] = []
-        
-        save_progress(output_path)
-        if not result.get('skipped'):
-            await asyncio.sleep(delay)
-    
-    elif isinstance(children, list) and children:
-        for child in children:
-            await process_node(child, output_path, current, delay)
-
-
-def count_nodes(tree):
-    stats = {'total': 0, 'empty': 0, 'skip': 0, 'crawl': 0}
-    
-    def count(nodes):
-        for n in nodes:
-            stats['total'] += 1
-            children = n.get('children', [])
-            url = n.get('url', '')
-            
-            if isinstance(children, list) and not children and url.startswith('http'):
-                stats['empty'] += 1
-                if should_skip(url):
-                    stats['skip'] += 1
-                else:
-                    stats['crawl'] += 1
-            elif isinstance(children, list) and children:
-                count(children)
-    
-    count(tree)
-    return stats
-
-
 async def main():
-    global MENU_TREE
-    
-    INPUT = 'kt_menu_final_with_url.json'
-    OUTPUT = 'kt_menu_crawled.json'
-    DELAY = 1.0
-    
-    print('=' * 60)
-    print('🚀 KT 메뉴 크롤러')
-    print('=' * 60)
-    
-    with open(INPUT, 'r', encoding='utf-8') as f:
-        MENU_TREE = json.load(f)
-    
-    stats = count_nodes(MENU_TREE)
-    logger.info(f"📊 전체: {stats['total']}개, 크롤링: {stats['crawl']}개, 스킵: {stats['skip']}개")
-    
-    logger.info('\n🚀 크롤링 시작...\n')
-    start = datetime.now()
-    output_path = Path(OUTPUT)
-    
-    for i, menu in enumerate(MENU_TREE, 1):
-        logger.info(f"\n{'='*60}")
-        logger.info(f"[{i}/{len(MENU_TREE)}] {menu.get('name', '')}")
-        logger.info('='*60)
-        await process_node(menu, output_path, [], DELAY)
-    
-    logger.info(f"\n🎉 완료! 소요시간: {datetime.now() - start}")
-    logger.info(f"💾 저장: {output_path.absolute()}")
+    print("=" * 60)
+    print("🔍 KT URL 크롤러 - 단일 URL 테스트")
+    print("=" * 60)
+
+    url = input("\n크롤링할 URL을 입력하세요: ").strip()
+
+    if not url:
+        print("❌ URL이 입력되지 않았습니다.")
+        return
+
+    if not url.startswith('http'):
+        url = f"https://{url}"
+
+    print(f"\n🚀 크롤링 시작: {url}")
+    print("-" * 60)
+
+    result = await crawl_page(url)
+
+    print("\n" + "=" * 60)
+    print("📊 결과")
+    print("=" * 60)
+
+    if result['success']:
+        if result.get('skipped'):
+            print("⏭️  스킵된 URL입니다.")
+        else:
+            links = result.get('links', [])
+            print(f"✅ 성공: {len(links)}개 링크 발견\n")
+
+            if links:
+                print("📋 추출된 링크 목록:")
+                print("-" * 60)
+                for i, link in enumerate(links, 1):
+                    print(f"\n{i}. {link['name']}")
+                    print(f"   URL: {link['url']}")
+
+                print("\n" + "=" * 60)
+                save = input("\n💾 결과를 JSON 파일로 저장하시겠습니까? (y/n): ").strip().lower()
+
+                if save == 'y':
+                    filename = 'crawl_result.json'
+                    with open(filename, 'w', encoding='utf-8') as f:
+                        json.dump({
+                            'url': url,
+                            'success': True,
+                            'links': links
+                        }, f, ensure_ascii=False, indent=2)
+                    print(f"✅ 저장 완료: {filename}")
+            else:
+                print("⚠️  추출된 링크가 없습니다.")
+    else:
+        print(f"❌ 실패: {result.get('error', '알 수 없는 오류')}")
 
 
 if __name__ == '__main__':
     try:
         asyncio.run(main())
     except KeyboardInterrupt:
-        logger.info('\n⚠️ 중단됨')
+        print("\n\n⚠️  사용자에 의해 중단되었습니다.")
     except Exception as e:
-        logger.error(f'❌ 오류: {e}', exc_info=True)
+        print(f"\n❌ 오류 발생: {e}")
