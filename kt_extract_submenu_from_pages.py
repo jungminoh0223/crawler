@@ -471,16 +471,29 @@ async def extract_products(page):
                     'url': f"{base_url}/display/olhsGoodsDtl.do?goodsCode={no}"
                 })
 
-        # 방식 2: <a prodno="..."> 태그
+        # 방식 2: <a prodno="..."> 태그 (onclick="goProdDetail('...')")
         for a in soup.find_all('a', attrs={'prodno': True}):
             no = a.get('prodno', '')
             if not no or no in seen:
                 continue
 
+            # 상품명 추출: 부모 <li>에서 prd-tit 또는 img alt 찾기
             name = ''
-            tit = a.find(class_='prd-tit')
-            if tit:
-                name = tit.get_text(strip=True)
+            parent_li = a.find_parent('li')
+            if parent_li:
+                tit = parent_li.select_one('.prd-tit')
+                if tit:
+                    name = tit.get_text(strip=True)
+                if not name:
+                    img = parent_li.select_one('img[alt]')
+                    if img:
+                        name = img.get('alt', '').strip()
+
+            # 부모 li에서 못 찾으면 a 태그 내에서 시도 (fallback)
+            if not name:
+                tit = a.find(class_='prd-tit')
+                if tit:
+                    name = tit.get_text(strip=True)
             if not name:
                 img = a.find('img')
                 if img:
