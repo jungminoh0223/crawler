@@ -106,11 +106,14 @@ def extract_links_from_soup(soup, base_url, min_count=1):
             if tit:
                 text = tit.get_text(strip=True)
         
-        # 2. img alt
+        # 2. EVENT_LABEL 
         if not text:
-            img = a.find('img')
-            if img:
-                text = img.get('alt', '').strip()
+            onclick = a.get('onclick', '')
+            if onclick and 'EVENT_LABEL' in onclick:
+                match = re.search(r"EVENT_LABEL\s*:\s*'([^']+)'", onclick)
+                if match:
+                    label = match.group(1)
+                    text = label.rsplit('_', 1)[0]
         
         # 3. 링크 텍스트 (불필요한 요소 제거 후 추출)
         if not text:
@@ -124,9 +127,11 @@ def extract_links_from_soup(soup, base_url, min_count=1):
         if not text:
             text = a.get('title', '').strip()
         
+        # 유효하지 않은 텍스트 스킵 (빈값, 2자 미만, 제외 패턴)
         if not text or len(text) < 2 or is_excluded_name(text):
             continue
-        
+
+        # 너무 긴 텍스트는 150자로 자르기
         if len(text) > 150:
             text = text[:150] + '...'
         
