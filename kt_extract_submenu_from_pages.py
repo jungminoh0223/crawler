@@ -328,19 +328,23 @@ async def extract_from_titled_iframe(page, iframe_title):
                     if not is_kt_domain(href):
                         continue
 
+                    # 텍스트 추출 - EVENT_LABEL 
                     text = ''
                     try:
-                        text = await link.inner_text()
-                        text = text.strip() if text else ''
+                        onclick = await link.get_attribute('onclick')
+                        if onclick and 'EVENT_LABEL' in onclick:
+                            match = re.search(r"EVENT_LABEL\s*:\s*'([^']+)'", onclick)
+                            if match:
+                                label = match.group(1)
+                                text = label.rsplit('_', 1)[0]
                     except:
                         pass
 
+                    # EVENT_LABEL 없으면 inner_text 시도
                     if not text or len(text) < 2:
                         try:
-                            img = link.locator('img').first
-                            alt = await img.get_attribute('alt')
-                            if alt:
-                                text = alt.strip()
+                            text = await link.inner_text()
+                            text = text.strip() if text else ''
                         except:
                             pass
 
