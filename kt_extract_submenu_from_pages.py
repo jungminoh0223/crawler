@@ -2,6 +2,7 @@ import json
 import asyncio
 import logging
 import re
+from copy import copy
 from typing import List, Dict
 from pathlib import Path
 from datetime import datetime
@@ -55,6 +56,15 @@ EXCLUDE_URL_PATTERNS = [
     '#',
 ]
 
+# 텍스트 추출 시 제외할 셀렉터 (링크 내부의 불필요한 요소)
+EXCLUDE_TEXT_SELECTORS = [
+    '.date', '.txt', '.desc', '.category', '.tag', '.badge', '.icon',
+    '.num', '.count', '.view', '.hit',
+    'span.sub', 'em.sub', '.sub-txt',
+    '.blind', '.sr-only', '.hidden',
+    '.btn', '.more',
+]
+
 def should_skip(url):
     return any(p in url for p in SKIP_CRAWL_PATTERNS)
 
@@ -102,9 +112,13 @@ def extract_links_from_soup(soup, base_url, min_count=1):
             if img:
                 text = img.get('alt', '').strip()
         
-        # 3. 링크 텍스트
+        # 3. 링크 텍스트 (불필요한 요소 제거 후 추출)
         if not text:
-            text = a.get_text(strip=True)
+            a_copy = copy(a)
+            for sel in EXCLUDE_TEXT_SELECTORS:
+                for el in a_copy.select(sel):
+                    el.decompose()
+            text = a_copy.get_text(strip=True)
         
         # 4. title 속성
         if not text:
