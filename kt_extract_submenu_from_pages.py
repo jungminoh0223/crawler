@@ -14,26 +14,56 @@ from playwright.async_api import async_playwright
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 logger = logging.getLogger(__name__)
 
-# 스킵할 URL 패턴
+# 스킵할 URL 패턴 - 페이지 자체를 방문하지 않음 (크롤링 대상에서 제외)
 SKIP_CRAWL_PATTERNS = [
-    'olhsPlan.do',          # 브랜드관 (기획전 상세)
-    'phoneView.do',         # 중고폰 보상
-    'whyKTSIM.do',          # 인기 추천 요금제
-    '/direct/',             # 다이렉트 페이지
-    'yogoEvent.do',         # 요고 이벤트
-    '/wire/',               # 유선(인터넷/TV) 전체
-    'soho/marketing.do',    # 소상공인 마케팅 상세
-    'soho/productDetail.do',# 소상공인 상품 상세
-    '/benefit/',            # 혜택 랜딩 페이지
-    'hotdeal.kt.com',       # 핫딜 쇼핑몰
-    '/deal/',               # 5시 핫픽, 출석체크 등 이벤트
-    '/rental/',             # 가전구독
-    '/recommend/',          # 나의 추천코드 등 개인 페이지
-    'offerwall.do',         # 캐시리워드
-    'supportAmtList.do',    # 휴대폰 지원금 안내
+    'plnDispNo=2642',                                   # Apple 브랜드관
+    'plnDispNo=2468',                                   # 갤럭시 브랜드관
+    'plnDispNo=2574',                                   # 친구초대 #케이득
+    'plnDispNo=2708',                                   # 피지컬 AI 디바이스
+    'dispNo=STOR04',                                    # 브랜드관 스토어 (액세서리/케이스/충전기/자급제폰/중고폰/일상용품 등)
+    'deal5g.do',                                        # 특가 상품
+    'phoneView.do',                                     # 중고폰 보상
+    'halfPricList.do'                                   # 사은품 안내
+    '/direct/',                                         # 요금제 가입 페이지
+    '/wire/',                                           # 유선(인터넷/TV) 전체
+    'soho/marketing.do',                                # 소상공인 마케팅 상세
+    'soho/productDetail.do',                            # 사장님 혜택존
+    '/benefit/',                                        # 혜택 랜딩 페이지
+    'hotdeal.kt.com',                                   # 핫딜 쇼핑몰
+    '/deal/',                                           # 5시 핫픽, 출석체크 등 이벤트
+    '/rental/',                                         # 가전구독
+    'supportAmtList.do',                                # 휴대폰 지원금 안내
+
+    ''' 로그인 필요 페이지 '''
+    'ermsweb.kt.com/pc/qna/',                           # 이메일 상담
+    'ermsweb.kt.com/pc/compliment/',                    # 칭찬합니다
+    'membership.kt.com/more/MembershipMileageInfo.do',  # 마일리지
+    'membership.kt.com/culture/movie/BookingInfo.do',   # 영화 예매
+    'membership.kt.com/culture/movie/HistoryInfo.do',   # 예매 내역
+    'membership.kt.com/culture/show/BookingInfo.do',    # 공연 예매
+    'membership.kt.com/culture/show/MyCultureInfo.do',  # MY컬처
+    'membership.kt.com/vip/lounge/',                    # VIP 라운지
+    '/unify/orderHistory.do',                           # 주문내역
+    '/person/',                                         # 개인 페이지 (주문내역/찜상품/최근본상품/포인트/쿠폰/구매후기)
+    '/uniteOrder/',                                     # 장바구니
+    'my.kt.com/myinfo/',                                # 가입정보
+    'my.kt.com/contract/',                              # 가입정보 변경 (요금할인 재약정 등)
+    'my.kt.com/myproduct/',                             # 내 상품 (명의변경/해지신청/쿠폰 등)
+    'my.kt.com/pause/',                                 # 일시정지
+    'my.kt.com/lostas/',                                # 분실신고/해제
+    'my.kt.com/number/',                                # 번호변경/사용자등록
+    'my.kt.com/install/',                               # 설치장소 변경
+    'my.kt.com/usage/',                                 # 이용량/이용내역
+    'my.kt.com/bill/',                                  # 요금조회/요금명세서
+    'my.kt.com/statement/',                             # 명세서 재발송/납부방법 변경
+    'my.kt.com/payment/',                               # 요금납부 (즉시납부/납부확인서)
+    'my.kt.com/legal/',                                 # 자녀요금
+    'my.kt.com/advance/',                               # 선불요금
+    'my.kt.com/membership/',                            # 멤버십
+    'my.kt.com/mypoint/',                               # 포인트
 ]
 
-# 제외할 이름 패턴
+# 제외할 이름 패턴 - 링크 텍스트가 이 패턴이면 수집하지 않음 (UI 요소 제외)
 EXCLUDE_NAME_PATTERNS = [
     r'^_?닫기_?$', r'^주문하기$', r'^이전\s*다음$', r'^확인$', r'^동의$', r'^검색$',
     r'^레이어\s*닫기$', r'^목록$', r'^장바구니$', r'^마이샵$', r'^로그인$', r'^회원가입$',
@@ -44,25 +74,37 @@ EXCLUDE_NAME_PATTERNS = [
     r'신청하기$', r'상담\s*신청', r'가입\s*상담',
 ]
 
-# 제외할 URL 패턴
+# 제외할 URL 패턴 - 크롤링 중 발견된 링크 중 이 패턴은 수집하지 않음
 EXCLUDE_URL_PATTERNS = [
     '/mobile/view.do',
     '/accessory/accsProductView.do',
     '/orderCartView.do',
     '/orderHistory.do',
+    '/wDic/productDetail.do',
     '/login',
     '/member/',
     'javascript:',
     '#',
 ]
 
-# 텍스트 추출 시 제외할 셀렉터 (링크 내부의 불필요한 요소)
+# 링크 추출 전 제거할 요소 (헤더/푸터/메뉴/배너 등)
+DECOMPOSE_SELECTORS = [
+    '#cfmClHeader', '#cfmClFooter', '#cfmClSkip', '.header', '.footer',
+    '.navigation', '.sidebar', '.banner', '.popup', '.overlay', '.sns-area', '.location',
+    '.gnb', '.lnb', '.snb', '.util', '.quick', '.ui-tab-lst', '.ui-tab-top-lst',
+    '.btn_auto_ga',
+    'a[class*="_link"]',  # h-next_link, h-special_link 등
+    'a[class*="link-"]',  # link-black, link-point 등
+]
+
+# 텍스트 추출 시 제외할 셀렉터 - 링크 내 하위 요소 중 이 셀렉터는 텍스트에서 제거
 EXCLUDE_TEXT_SELECTORS = [
     '.date', '.txt', '.desc', '.category', '.tag', '.badge', '.icon',
     '.num', '.count', '.view', '.hit',
     'span.sub', 'em.sub', '.sub-txt',
-    '.blind', '.sr-only', '.hidden',
+    '.blind', '.sr-only', '.hidden', '.hidetxt',
     '.btn', '.more',
+    '.linked', '.breadcrumb', '.path',
 ]
 
 def should_skip(url):
@@ -87,6 +129,11 @@ def extract_links_from_soup(soup, base_url, min_count=1):
     """링크 추출"""
     links, seen = [], set()
 
+    # DECOMPOSE_SELECTORS 적용 (a.link-black 등 제거)
+    for sel in DECOMPOSE_SELECTORS:
+        for el in soup.select(sel):
+            el.decompose()
+
     for a in soup.find_all('a', href=True):
         href = a['href'].strip()
         if href.startswith('/'):
@@ -96,16 +143,31 @@ def extract_links_from_soup(soup, base_url, min_count=1):
             continue
         if is_excluded_url(href) or href in seen:
             continue
-        
+
+        # onclick="javascript:..." 있으면 제외 (탭/버튼 등 UI 요소)
+        onclick = a.get('onclick', '')
+        if 'javascript:' in onclick.lower():
+            continue
+
         text = ''
-        
+
+        # 0. 링크 내에 보이는 텍스트가 있는지 먼저 체크 (.blind 등 제거 후)
+        a_check = copy(a)
+        for sel in EXCLUDE_TEXT_SELECTORS:
+            for el in a_check.select(sel):
+                el.decompose()
+        visible_text = a_check.get_text(strip=True)
+        if not visible_text:
+            # 보이는 텍스트가 없으면 스킵 (EVENT_LABEL 있어도 무시)
+            continue
+
         # 1. .plan_tit em
         parent_li = a.find_parent('li')
         if parent_li:
             tit = parent_li.select_one('.plan_tit em')
             if tit:
                 text = tit.get_text(strip=True)
-        
+
         # 2. EVENT_LABEL 
         if not text:
             onclick = a.get('onclick', '')
@@ -170,7 +232,7 @@ async def extract_with_pagination(frame):
     page_num = 1
     base_url = get_base_url(frame.url)
 
-    while page_num <= 20:
+    while True:
         logger.info(f"📄 {page_num}페이지 수집...")
 
         html = await frame.content()
@@ -226,16 +288,14 @@ async def extract_with_pagination_generic(frame):
     page_num = 1
     base_url = get_base_url(frame.url)
 
-    while page_num <= 20:
+    while True:  # 자연 종료 조건으로 탈출
         logger.info(f"📄 {page_num}페이지 수집...")
 
         html = await frame.content()
         soup = BeautifulSoup(html, 'html.parser')
 
         # 헤더/푸터/탭 제거
-        for sel in ['#cfmClHeader', '#cfmClFooter', '#cfmClSkip', '.header', '.footer',
-                    '.navigation', '.sidebar', '.banner', '.popup', '.overlay', '.sns-area', '.location',
-                    '.gnb', '.lnb', '.snb', '.util', '.quick', '.ui-tab-lst', '.ui-tab-top-lst']:
+        for sel in DECOMPOSE_SELECTORS:
             for el in soup.select(sel):
                 el.decompose()
 
@@ -295,7 +355,7 @@ async def extract_from_titled_iframe(page, iframe_title):
         page_num = 1
         base_url = get_base_url(page.url)
 
-        while page_num <= 20:
+        while True:
             logger.info(f"   📄 페이지 {page_num} 처리 중...")
 
             links = await frame.locator('a[href]').all()
@@ -339,14 +399,6 @@ async def extract_from_titled_iframe(page, iframe_title):
                                 text = label.rsplit('_', 1)[0]
                     except:
                         pass
-
-                    # EVENT_LABEL 없으면 inner_text 시도
-                    if not text or len(text) < 2:
-                        try:
-                            text = await link.inner_text()
-                            text = text.strip() if text else ''
-                        except:
-                            pass
 
                     if text and len(text) >= 2 and not is_excluded_name(text):
                         seen.add(href)
@@ -477,7 +529,7 @@ async def extract_products(page):
     seen = set()
     page_num = 1
 
-    while page_num <= 20:
+    while True:
         logger.info(f"📄 상품 페이지 {page_num} 처리 중...")
 
         html = await page.content()
@@ -549,22 +601,155 @@ async def extract_products(page):
 
 
 async def extract_board_links(page):
-    """게시판 링크 추출"""
-    html = await page.content()
-    soup = BeautifulSoup(html, 'html.parser')
+    """게시판 목록 추출 (페이지네이션 지원)"""
     base_url = get_base_url(page.url)
+    all_links, seen = [], set()
+    page_num = 1
+    zero_count = 0  # 연속으로 새 링크 없는 페이지 카운터
 
-    for sel in ['#cfmClHeader', '#cfmClFooter', '#cfmClSkip', '.header', '.footer',
-                '.navigation', '.sidebar', '.banner', '.popup', '.overlay', '.sns-area', '.location']:
-        for el in soup.select(sel):
+    while True:  # 자연 종료 조건으로 탈출
+        logger.info(f"📄 목록 페이지 {page_num} 처리 중...")
+
+        html = await page.content()
+        soup = BeautifulSoup(html, 'html.parser')
+        count_before = len(all_links)
+
+        # display: none 요소 제거 (숨겨진 메뉴 등)
+        for el in soup.find_all(style=lambda s: s and 'display' in s.lower() and 'none' in s.lower()):
             el.decompose()
-    for tag in soup(['script', 'style', 'noscript']):
-        tag.decompose()
 
-    links = extract_links_from_soup(soup, base_url, min_count=3)
-    if links:
-        logger.info(f"📋 게시판 {len(links)}개 링크 추출")
-    return links
+        # 1. data-apcturl 속성이 있는 a 태그 (이벤트 목록)
+        for a in soup.find_all('a', attrs={'data-apcturl': True}):
+            url = a.get('data-apcturl', '').strip()
+            if not url or url in seen:
+                continue
+
+            # 제목 추출: .title > img alt > a 텍스트
+            title_el = a.select_one('.title')
+            text = title_el.get_text(strip=True) if title_el else ''
+            if not text:
+                img = a.find('img')
+                if img:
+                    text = img.get('alt', '').strip()
+            if not text:
+                text = a.get_text(strip=True)
+
+            if text and len(text) >= 2:
+                seen.add(url)
+                all_links.append({'name': text, 'url': url})
+
+        # 2. onclick="goDetPage(숫자)" 패턴 (페이지네이션 후에도 계속 추출)
+        for a in soup.find_all('a', onclick=True):
+            onclick = a.get('onclick', '')
+            match = re.search(r'goDetPage\((\d+)\)', onclick)
+            if not match:
+                continue
+
+            seq = match.group(1)
+            url = f"{base_url}/blog/detail.do?seq={seq}"
+            if url in seen:
+                continue
+
+            # 제목 추출: img alt > a 텍스트
+            img = a.find('img')
+            text = img.get('alt', '').strip() if img else ''
+            if not text:
+                text = a.get_text(strip=True)
+
+            if text and len(text) >= 2:
+                seen.add(url)
+                all_links.append({'name': text, 'url': url})
+
+        # 3. 일반 링크 추출 (게시판) - 위 패턴에서 추출된 게 없는 경우
+        if count_before == len(all_links):
+            for sel in DECOMPOSE_SELECTORS:
+                for el in soup.select(sel):
+                    el.decompose()
+            for tag in soup(['script', 'style', 'noscript']):
+                tag.decompose()
+
+            for link in extract_links_from_soup(soup, base_url=base_url, min_count=1):
+                if link['url'] not in seen:
+                    seen.add(link['url'])
+                    all_links.append(link)
+
+        added = len(all_links) - count_before
+        logger.info(f"   → 페이지 {page_num}: +{added}개 (총 {len(all_links)}개)")
+
+        # 연속으로 새 링크 없는 페이지 체크 (무한루프 방지)
+        if added == 0:
+            zero_count += 1
+            if zero_count >= 2:  # 연속 2번 이상 새 링크 없으면 종료
+                logger.info("   → 연속 2페이지 새 링크 없음, 종료")
+                break
+        else:
+            zero_count = 0
+
+        # 첫 페이지에서 아무것도 없으면 종료
+        if page_num == 1 and len(all_links) < 3:
+            break
+
+        # 다음 페이지 버튼 찾기
+        next_page = page_num + 1
+        next_btn = page.locator(f'a[pageno="{next_page}"]').first
+        next_count = await next_btn.count()
+
+        if next_count == 0:
+            # 정확한 페이지 번호 매칭 (:text-is로 정확히 일치)
+            next_btn = page.locator(f'.paging a:text-is("{next_page}"), .pagination a:text-is("{next_page}")').first
+            next_count = await next_btn.count()
+
+        if next_count == 0:
+            # ">" 또는 "다음" 화살표 버튼 시도 (다음 페이지 그룹 표시)
+            arrow_btn = page.locator('a.dir.next, a.next, a.btn-next, a.next-page').first
+            arrow_count = await arrow_btn.count()
+            if arrow_count > 0:
+                logger.info(f"   ➡️ arrow 버튼 클릭 (페이지 {next_page} 버튼 표시)")
+                await arrow_btn.click()
+                await page.wait_for_timeout(2000)
+                # arrow 클릭 후 다음 페이지 버튼 찾아서 클릭
+                next_btn = page.locator(f'a[pageno="{next_page}"]').first
+                next_count = await next_btn.count()
+                if next_count == 0:
+                    next_btn = page.locator(f'.paging a:text-is("{next_page}"), .pagination a:text-is("{next_page}")').first
+                    next_count = await next_btn.count()
+                if next_count > 0:
+                    logger.info(f"   📄 페이지 {next_page} 버튼 클릭")
+                    await next_btn.click()
+                    await page.wait_for_timeout(2000)
+                # arrow 클릭 후에는 항상 continue (버튼 클릭 여부와 관계없이)
+                page_num += 1
+                continue
+
+        if next_count == 0:
+            # "더보기" 버튼 시도 (visible만, a 태그 제외)
+            more_btn = page.locator('#btn_more:visible, .fjbBtnMore:visible, button:has-text("더보기"):visible, .btn-more:visible, .more-btn:visible, .load-more:visible').first
+            more_count = await more_btn.count()
+            if more_count > 0:
+                # 마지막 페이지인지 확인 (예: "3/3")
+                more_text = await more_btn.inner_text()
+                match = re.search(r'(\d+)/(\d+)', more_text)
+                if match and match.group(1) == match.group(2):
+                    break  # 마지막 페이지면 종료
+
+                await more_btn.click()
+                await page.wait_for_timeout(2000)
+                page_num += 1
+                continue
+
+        if next_count == 0:
+            # 다음 페이지도 없고 새 링크도 없으면 종료
+            if added == 0:
+                logger.info("   → 다음 페이지 없음, 종료")
+            break
+
+        await next_btn.click()
+        await page.wait_for_timeout(2000)
+        page_num += 1
+
+    if all_links:
+        logger.info(f"📋 목록 총 {len(all_links)}개 링크 추출")
+    return all_links if len(all_links) >= 3 else []
 
 
 async def crawl_page(url):
@@ -611,11 +796,10 @@ async def crawl_page(url):
                 return {'success': True, 'links': products}
 
             # 2. 게시판
-            if any(kw in url.lower() for kw in ['webzine', 'board', 'notice', 'news']):
-                links = await extract_board_links(page)
-                if links:
-                    await browser.close()
-                    return {'success': True, 'links': links}
+            links = await extract_board_links(page)
+            if links:
+                await browser.close()
+                return {'success': True, 'links': links}
 
             # 3. 탭
             tabs = await extract_tabs(page)
