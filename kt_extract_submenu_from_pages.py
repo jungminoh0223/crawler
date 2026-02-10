@@ -67,11 +67,12 @@ SKIP_CRAWL_PATTERNS = [
 EXCLUDE_NAME_PATTERNS = [
     r'^_?닫기_?$', r'^주문하기$', r'^이전\s*다음$', r'^확인$', r'^동의$', r'^검색$',
     r'^레이어\s*닫기$', r'^목록$', r'^장바구니$', r'^마이샵$', r'^로그인$', r'^회원가입$',
-    r'^자세히\s*보기$', r'^더보기$', r'^TOP$', r'^맨위로$', r'^공유하기$', r'^찜하기$',
-    r'^비교하기$', r'^바로가기$', r'^이전$', r'^다음$', r'^이전글$', r'^다음글$',
+    r'자세히\s*보기$', r'^더보기$', r'^TOP$', r'^맨위로$', r'^공유하기$', r'^찜하기$',
+    r'^비교하기$', r'\(?바로가기\)?$', r'^이전$', r'^다음$', r'^이전글$', r'^다음글$',
     r'^HOME$', r'^홈$', r'^메뉴$', r'^전체메뉴$', r'^레이어\s*팝업$', r'^팝업\s*닫기$',
     r'^SNS\s*공유$', r'^카카오톡$', r'^페이스북$', r'^트위터$', r'^링크\s*복사$',
-    r'신청하기$', r'상담\s*신청', r'가입\s*상담',
+    r'신청하기$', r'상담\s*신청', r'가입\s*상담', r'구매하기$',
+    r'하러\s*가기$', r'변경하기$',
 ]
 
 # 제외할 URL 패턴 - 크롤링 중 발견된 링크 중 이 패턴은 수집하지 않음
@@ -92,9 +93,13 @@ DECOMPOSE_SELECTORS = [
     '#cfmClHeader', '#cfmClFooter', '#cfmClSkip', '.header', '.footer',
     '.navigation', '.sidebar', '.banner', '.popup', '.overlay', '.sns-area', '.location',
     '.gnb', '.lnb', '.snb', '.util', '.quick', '.ui-tab-lst', '.ui-tab-top-lst',
-    '.btn_auto_ga',
+    '.btn_auto_ga', '.btn_rpeSIM',
     'a[class*="_link"]',  # h-next_link, h-special_link 등
-    'a[class*="link-"]',  # link-black, link-point 등
+    'a[class*="link"]',  # link-black, link-point 등
+    'a[target="_blank"]',  # 새창 열리는 링크 (배너/외부링크)
+    '.button-solid',  # 버튼 스타일 링크
+    'a[data-gnbmenuid]',  # GNB 메뉴 링크
+    'a[onclick*="KT_product_trackClicks"]',  # 트래킹 바로가기 링크
 ]
 
 # 텍스트 추출 시 제외할 셀렉터 - 링크 내 하위 요소 중 이 셀렉터는 텍스트에서 제거
@@ -120,7 +125,7 @@ def get_base_url(url):
     return f"{parsed.scheme}://{parsed.netloc}"
 
 def is_excluded_name(name):
-    return any(re.match(p, name.strip(), re.IGNORECASE) for p in EXCLUDE_NAME_PATTERNS)
+    return any(re.search(p, name.strip(), re.IGNORECASE) for p in EXCLUDE_NAME_PATTERNS)
 
 def is_excluded_url(url):
     return any(p in url for p in EXCLUDE_URL_PATTERNS)
