@@ -323,12 +323,8 @@
             "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1662",
             "children": [
               {
-                "name": "2년동안 최대 21만원 쿠폰혜택! KT닷컴 쿠폰팩",
+                "name": "선택됨",
                 "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1662"
-              },
-              {
-                "name": "최신 인기 사은품을 마음껏 고르세요! KT닷컴 액세서리 쿠폰",
-                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1424"
               }
             ]
           },
@@ -376,7 +372,12 @@
               {
                 "name": "요고 요금제 가입 혜택",
                 "url": "https://shop.kt.com/unify/yogoEvent.do",
-                "children": []
+                "children": [
+                  {
+                    "name": "다이렉트 디바이스 초이스 가입신청| KT",
+                    "url": "https://m.shop.kt.com:444/m/display/olhsPlan.do?plnDispNo=2316"
+                  }
+                ]
               },
               {
                 "name": "핸드폰 등록 및 요금제 변경",
@@ -398,7 +399,12 @@
           {
             "name": "선불 USIM 구매/충전",
             "url": "https://shop.kt.com/unify/mobile.do?&category=usim",
-            "children": []
+            "children": [
+              {
+                "name": "유의사항",
+                "url": "https://shop.kt.com/content/openshop/price/lte/lte_01_29.html"
+              }
+            ]
           },
           {
             "name": "eSIM 이동",
@@ -481,7 +487,12 @@
           {
             "name": "5시 핫픽",
             "url": "https://plus.kt.com",
-            "children": []
+            "children": [
+              {
+                "name": "당첨자 발표",
+                "url": "https://plus.kt.com/event/winner-board"
+              }
+            ]
           },
           {
             "name": "친구초대 #케이득",
@@ -1562,7 +1573,12 @@
               {
                 "name": "액세서리",
                 "url": "https://shop.kt.com/accessory/accsCartProdList.do",
-                "children": []
+                "children": [
+                  {
+                    "name": "액세서리",
+                    "url": "https://shop.kt.com/accessory/accsCartProdList.do"
+                  }
+                ]
               }
             ]
           },
@@ -1593,12 +1609,30 @@
               {
                 "name": "핸드폰 구매 이용안내",
                 "url": "https://shop.kt.com/support/shopMobileGuide.do",
-                "children": []
+                "children": [
+                  {
+                    "name": "핸드폰구매이용안내",
+                    "url": "https://shop.kt.com/support/shopMobileGuide.do"
+                  },
+                  {
+                    "name": "인터넷TV가입이용안내",
+                    "url": "https://shop.kt.com/support/shopInternetTvGuide.do"
+                  }
+                ]
               },
               {
                 "name": "인터넷/TV 가입 이용안내",
                 "url": "https://shop.kt.com/support/shopInternetTvGuide.do",
-                "children": []
+                "children": [
+                  {
+                    "name": "핸드폰구매이용안내",
+                    "url": "https://shop.kt.com/support/shopMobileGuide.do"
+                  },
+                  {
+                    "name": "인터넷TV가입이용안내",
+                    "url": "https://shop.kt.com/support/shopInternetTvGuide.do"
+                  }
+                ]
               }
             ]
           },
@@ -3022,7 +3056,16 @@
           {
             "name": "WiFi 이용안내",
             "url": "https://wifi.kt.com/kt/kt_main.html",
-            "children": []
+            "children": [
+              {
+                "name": "WiFi zone 찾기",
+                "url": "https://nqi.kt.com/KTCVRG/coverage?menuId=wifi"
+              },
+              {
+                "name": "다운로드",
+                "url": "http://help.kt.com/pc/serviceinfo/PdfDownload.jsp?filename=CM5512_Setup.exe&gubun=sw"
+              }
+            ]
           },
           {
             "name": "링투유/벨소리",
@@ -3074,7 +3117,12 @@
               {
                 "name": "소개",
                 "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1452",
-                "children": []
+                "children": [
+                  {
+                    "name": "새창 열림",
+                    "url": "https://shop.kt.com/wire/orderTelCounselForm.do?prodNo=WR00062514&cmpid=shop_wire_220307-display-telorder_ktinternet-ktcomproductlist"
+                  }
+                ]
               },
               {
                 "name": "프리미엄급 인터넷",
@@ -3255,7 +3303,12 @@
           {
             "name": "디바이스",
             "url": "https://gigagenie.kt.com/main.do",
-            "children": []
+            "children": [
+              {
+                "name": "상담하기",
+                "url": "https://shop.kt.com/wire/orderTelCounselForm.do?prodNo=WR00072814"
+              }
+            ]
           },
           {
             "name": "지니 AI서비스",
@@ -3480,7 +3533,12 @@
           {
             "name": "총액 결합할인",
             "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1133",
-            "children": []
+            "children": [
+              {
+                "name": "\"KT 결합 가족이라면 놓치지 마세요! KT 패밀리박스. 가족끼리 자유롭게 데이터 나눠 쓰고 보너스 데이터 혜택까지\"",
+                "url": "https://product.kt.com/benefit/membership/web/membership06.html"
+              }
+            ]
           },
           {
             "name": "정액 결합할인",
@@ -3669,12 +3727,26 @@
               {
                 "name": "인터넷전화",
                 "url": "https://product.kt.com/wDic/index.do?CateCode=6012",
-                "children": []
+                "children": [
+                  {
+                    "name": "인터넷전화 3000",
+                    "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1021&CateCode=6012&filter_code=26&option_code=47&pageSize=10"
+                  },
+                  {
+                    "name": "사장님 배달POS 인터넷전화",
+                    "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1536&CateCode=6012&filter_code=26&option_code=47&pageSize=10"
+                  }
+                ]
               },
               {
                 "name": "수신자 부담",
                 "url": "https://product.kt.com/wDic/index.do?CateCode=6014",
-                "children": []
+                "children": [
+                  {
+                    "name": "1541 콜렉트콜",
+                    "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=370&CateCode=6014&filter_code=55&option_code=82&pageSize=10"
+                  }
+                ]
               }
             ]
           },
@@ -3690,7 +3762,16 @@
               {
                 "name": "요금제",
                 "url": "https://product.kt.com/wDic/index.do?CateCode=6016",
-                "children": []
+                "children": [
+                  {
+                    "name": "001 글로벌Free",
+                    "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1659&CateCode=6016&filter_code=29&option_code=52&pageSize=10"
+                  },
+                  {
+                    "name": "001 Free",
+                    "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1000&CateCode=6016&filter_code=29&option_code=52&pageSize=10"
+                  }
+                ]
               },
               {
                 "name": "부가서비스",
@@ -4150,12 +4231,8 @@
             "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1662",
             "children": [
               {
-                "name": "2년동안 최대 21만원 쿠폰혜택! KT닷컴 쿠폰팩",
+                "name": "선택됨",
                 "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1662"
-              },
-              {
-                "name": "최신 인기 사은품을 마음껏 고르세요! KT닷컴 액세서리 쿠폰",
-                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=1424"
               }
             ]
           }
@@ -4535,7 +4612,12 @@
           {
             "name": "5시 핫픽",
             "url": "https://plus.kt.com",
-            "children": []
+            "children": [
+              {
+                "name": "당첨자 발표",
+                "url": "https://plus.kt.com/event/winner-board"
+              }
+            ]
           }
         ]
       }
@@ -4572,7 +4654,12 @@
           {
             "name": "추천 AI 안심 부가서비스",
             "url": "https://inside.kt.com/html/safety/recommended_relax.html",
-            "children": []
+            "children": [
+              {
+                "name": "(안심)스팸차단휴대폰으로 수신되는 스팸문자 차단무료",
+                "url": "https://spamfilter.mobile.kt.com/safety.do"
+              }
+            ]
           },
           {
             "name": "두낫콜 서비스",
@@ -4735,7 +4822,12 @@
           {
             "name": "제조사별 A/S센터 안내",
             "url": "https://help.kt.com/asreq/MobileAsCenterInfo.do",
-            "children": []
+            "children": [
+              {
+                "name": "휴대폰 임대신청",
+                "url": "https://my.kt.com/lostas/MoLeasePhoneInfo.do"
+              }
+            ]
           }
         ]
       },
@@ -5200,22 +5292,50 @@
           {
             "name": "셀프개통",
             "url": "https://help.kt.com/asreq/SelfOpenInfo.do",
-            "children": []
+            "children": [
+              {
+                "name": "셀프개통",
+                "url": "https://help.kt.com/asreq/SelfOpenInfo.do"
+              },
+              {
+                "name": "설치 가이드",
+                "url": "https://help.kt.com/asreq/SelfOpenInstallGuide.do"
+              }
+            ]
           },
           {
             "name": "인터넷 속도측정",
             "url": "https://speed.kt.com/speed/speedtest/introduce.asp",
-            "children": []
+            "children": [
+              {
+                "name": "속도테스트",
+                "url": "https://speed.kt.com/"
+              },
+              {
+                "name": "인터넷 요금제 업그레이드 신청",
+                "url": "https://shop.kt.com/wire/orderTelCounselForm.do?prodNo=WR00069223"
+              }
+            ]
           },
           {
             "name": "서비스 가능지역 찾기",
             "url": "https://help.kt.com/serviceinfo/SearchHomePhone.do",
-            "children": []
+            "children": [
+              {
+                "name": "전화번호로찾기",
+                "url": "https://help.kt.com/serviceinfo/SearchServiceAreaByHomePhone.do"
+              }
+            ]
           },
           {
             "name": "서비스 커버리지",
             "url": "https://nqi.kt.com/KTCVRG/ollehIntro",
-            "children": []
+            "children": [
+              {
+                "name": "고객지원 > 온라인 문의 > 자주하는 질문 (카테고리로 찾기 > 서비스이용안내)",
+                "url": "https://ermsweb.kt.com/pc/faq/faqList.jsp?pageNo=1&parentNodeId=NODE0000000588&nodeId=NODE0000001394&kbId=&surveyType=FAQAF&pageSort=&slideBgBlockHeight=159"
+              }
+            ]
           }
         ]
       },
@@ -5269,12 +5389,22 @@
           {
             "name": "임대폰 신청",
             "url": "https://help.kt.com/lostphone/ApplyRentalPhone.do",
-            "children": []
+            "children": [
+              {
+                "name": "가까운KT플라자/매장찾기",
+                "url": "https://help.kt.com/store/KtStoreSearch.do"
+              }
+            ]
           },
           {
             "name": "단말보험 보상받기",
             "url": "https://help.kt.com/lostphone/CompDeviceInsurance.do",
-            "children": []
+            "children": [
+              {
+                "name": "나의보험가입여부확인",
+                "url": "https://my.kt.com/contract/MoPhoneCare.do"
+              }
+            ]
           }
         ]
       },
@@ -5295,7 +5425,160 @@
           {
             "name": "서비스 안내",
             "url": "https://help.kt.com/serviceinfo/ServiceJoinGuide.do",
-            "children": []
+            "children": [
+              {
+                "name": "가입방법 안내",
+                "url": "https://help.kt.com/serviceinfo/ServiceJoinGuideL1.do"
+              },
+              {
+                "name": "모바일 번호이동 가입안내",
+                "url": "https://help.kt.com/serviceinfo/ServiceJoinGuideL2.do"
+              },
+              {
+                "name": "가입비 안내",
+                "url": "https://help.kt.com/serviceinfo/ServiceJoinGuideL3.do"
+              },
+              {
+                "name": "가입신청 구비서류 안내",
+                "url": "https://help.kt.com/serviceinfo/ServiceJoinGuideL4.do"
+              },
+              {
+                "name": "KT모바일 전화번호 관리 기준",
+                "url": "https://help.kt.com/serviceinfo/ServiceJoinGuideL5.do"
+              },
+              {
+                "name": "KT 아이폰 기기변경",
+                "url": "https://help.kt.com/serviceinfo/ServiceJoinGuideL6.do"
+              },
+              {
+                "name": "애플워치 연결 안내",
+                "url": "https://help.kt.com/serviceinfo/ServiceJoinGuideL7.do"
+              },
+              {
+                "name": "명의변경 방법",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL1.do"
+              },
+              {
+                "name": "개명/개칭 방법",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL2.do"
+              },
+              {
+                "name": "가입정보 변경",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL3.do"
+              },
+              {
+                "name": "승계 프로그램",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL5.do"
+              },
+              {
+                "name": "모바일 일시정지",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL6.do"
+              },
+              {
+                "name": "통화내역열람 (지점방문)",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL7.do"
+              },
+              {
+                "name": "통화내역열람 (홈페이지)",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL8.do"
+              },
+              {
+                "name": "USIM",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL9.do"
+              },
+              {
+                "name": "고객 Lock설정",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL10.do"
+              },
+              {
+                "name": "USIM 이동성",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL11.do"
+              },
+              {
+                "name": "사업자 간 USIM 이동성",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL12.do"
+              },
+              {
+                "name": "다른 고객의 휴대폰 사용방법",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL13.do"
+              },
+              {
+                "name": "타 통신사 휴대폰으로USIM 이동",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL14.do"
+              },
+              {
+                "name": "타 통신사 휴대폰에서무선 인터넷이용",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL15.do"
+              },
+              {
+                "name": "타 통신사 휴대폰 이동 시기존 서비스 이용",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL16.do"
+              },
+              {
+                "name": "휴대폰 분실 시 해야 할 일",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL17.do"
+              },
+              {
+                "name": "이동성 관련 유의사항",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL18.do"
+              },
+              {
+                "name": "금융 USIM 사용법",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL19.do"
+              },
+              {
+                "name": "금융 USIM 활용",
+                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL20.do"
+              },
+              {
+                "name": "모바일 해지 구비서류 안내",
+                "url": "https://help.kt.com/serviceinfo/ServiceCloseGuideL1.do"
+              },
+              {
+                "name": "홈상품 해지 구비서류 안내",
+                "url": "https://help.kt.com/serviceinfo/ServiceCloseGuideL2.do"
+              },
+              {
+                "name": "요금기준안내",
+                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL1.do"
+              },
+              {
+                "name": "온라인 즉시납부",
+                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL2.do"
+              },
+              {
+                "name": "자동납부",
+                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL3.do"
+              },
+              {
+                "name": "지로납부",
+                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL4.do"
+              },
+              {
+                "name": "납기일",
+                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL6.do"
+              },
+              {
+                "name": "과오납 등 유보금 미환급요금안내",
+                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL7.do"
+              },
+              {
+                "name": "모바일 해지 미환급금 안내",
+                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL8.do"
+              },
+              {
+                "name": "모바일채권 보존료미환급금 안내",
+                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL9.do"
+              },
+              {
+                "name": "통신비 자동이체 변경",
+                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL10.do"
+              },
+              {
+                "name": "요금명세서 안내",
+                "url": "https://help.kt.com/serviceinfo/BillStatementGuideL1.do"
+              }
+            ]
           },
           {
             "name": "Shop 이용안내",
@@ -5304,12 +5587,30 @@
               {
                 "name": "핸드폰 구매 이용안내",
                 "url": "https://shop.kt.com/support/shopMobileGuide.do",
-                "children": []
+                "children": [
+                  {
+                    "name": "핸드폰구매이용안내",
+                    "url": "https://shop.kt.com/support/shopMobileGuide.do"
+                  },
+                  {
+                    "name": "인터넷TV가입이용안내",
+                    "url": "https://shop.kt.com/support/shopInternetTvGuide.do"
+                  }
+                ]
               },
               {
                 "name": "인터넷/TV 가입 이용안내",
                 "url": "https://shop.kt.com/support/shopInternetTvGuide.do",
-                "children": []
+                "children": [
+                  {
+                    "name": "핸드폰구매이용안내",
+                    "url": "https://shop.kt.com/support/shopMobileGuide.do"
+                  },
+                  {
+                    "name": "인터넷TV가입이용안내",
+                    "url": "https://shop.kt.com/support/shopInternetTvGuide.do"
+                  }
+                ]
               }
             ]
           },
@@ -5320,7 +5621,28 @@
               {
                 "name": "신청서 다운로드",
                 "url": "https://help.kt.com/serviceinfo/UseRegUseInfo.do",
-                "children": []
+                "children": [
+                  {
+                    "name": "이용신청서 작성",
+                    "url": "https://help.kt.com/serviceinfo/UseRegUseWriter.do"
+                  },
+                  {
+                    "name": "대리점 찾기",
+                    "url": "https://help.kt.com/store/KtStoreSearch.do"
+                  },
+                  {
+                    "name": "통화내역조회",
+                    "url": "https://my.kt.com/usage/MoTelCallInfo.do"
+                  },
+                  {
+                    "name": "일시정지 신청/해지",
+                    "url": "https://my.kt.com/pause/MobilePauseInfo.do"
+                  },
+                  {
+                    "name": "서류양식 다운로드",
+                    "url": "https://help.kt.com/serviceinfo/FormdownloadInfo.do"
+                  }
+                ]
               },
               {
                 "name": "사용설명서 자료실",
@@ -5330,7 +5652,20 @@
               {
                 "name": "접속설치 프로그램",
                 "url": "https://help.kt.com/serviceinfo/EggSWDownloadInfo.do",
-                "children": []
+                "children": [
+                  {
+                    "name": "WiBro S/W",
+                    "url": "https://help.kt.com/serviceinfo/EggSWDownloadInfo.do"
+                  },
+                  {
+                    "name": "접속프로그램",
+                    "url": "https://help.kt.com/serviceinfo/ProgramDownloadInfo.do"
+                  },
+                  {
+                    "name": "설치드라이브",
+                    "url": "https://help.kt.com/serviceinfo/SetupDownloadInfo.do"
+                  }
+                ]
               }
             ]
           },
@@ -5341,12 +5676,42 @@
               {
                 "name": "장애인상품 가입안내",
                 "url": "https://help.kt.com/disabledInfo/DisabledProdGuide1.do",
-                "children": []
+                "children": [
+                  {
+                    "name": "전용 요금제",
+                    "url": "https://help.kt.com/disabledInfo/DisabledProdGuide1.do"
+                  },
+                  {
+                    "name": "전용 부가서비스",
+                    "url": "https://help.kt.com/disabledInfo/DisabledProdGuide2.do"
+                  },
+                  {
+                    "name": "복지할인 제도",
+                    "url": "https://help.kt.com/disabledInfo/DisabledProdGuide3.do"
+                  },
+                  {
+                    "name": "자세히 알아보기",
+                    "url": "https://product.kt.com/wDic/index.do?CateCode=6002"
+                  }
+                ]
               },
               {
                 "name": "장애인용 서비스 이용안내",
                 "url": "https://help.kt.com/disabledInfo/DisabledServiceGuide1.do",
-                "children": []
+                "children": [
+                  {
+                    "name": "전용 고객센터",
+                    "url": "https://help.kt.com/disabledInfo/DisabledServiceGuide1.do"
+                  },
+                  {
+                    "name": "전용 요금명세서",
+                    "url": "https://help.kt.com/disabledInfo/DisabledServiceGuide2.do"
+                  },
+                  {
+                    "name": "기타 유용한 TIP",
+                    "url": "https://help.kt.com/disabledInfo/DisabledServiceGuide4.do"
+                  }
+                ]
               }
             ]
           },
@@ -5622,7 +5987,12 @@
               {
                 "name": "액세서리",
                 "url": "https://shop.kt.com/accessory/accsCartProdList.do",
-                "children": []
+                "children": [
+                  {
+                    "name": "액세서리",
+                    "url": "https://shop.kt.com/accessory/accsCartProdList.do"
+                  }
+                ]
               }
             ]
           },
