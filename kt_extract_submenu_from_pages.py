@@ -73,6 +73,7 @@ EXCLUDE_NAME_PATTERNS = [
     r'^SNS\s*공유$', r'^카카오톡$', r'^페이스북$', r'^트위터$', r'^링크\s*복사$',
     r'신청하기$', r'상담\s*신청', r'가입\s*상담', r'구매하기$',
     r'하러\s*가기$', r'변경하기$',
+    r'^상품안내$',  
 ]
 
 # 제외할 URL 패턴 - 크롤링 중 발견된 링크 중 이 패턴은 수집하지 않음
@@ -81,7 +82,7 @@ EXCLUDE_URL_PATTERNS = [
     '/accessory/accsProductView.do',
     '/orderCartView.do',
     '/orderHistory.do',
-    '/wDic/productDetail.do',
+    # '/wDic/productDetail.do',
     '/login',
     '/member/',
     'javascript:',
@@ -94,12 +95,13 @@ DECOMPOSE_SELECTORS = [
     '.navigation', '.sidebar', '.banner', '.popup', '.overlay', '.sns-area', '.location',
     '.gnb', '.lnb', '.snb', '.util', '.quick', '.ui-tab-lst', '.ui-tab-top-lst',
     '.btn_auto_ga', '.btn_rpeSIM',
+    '.link-list-area', '.link-list',  # 하단 바로가기 링크 영역
     'a[class*="_link"]',  # h-next_link, h-special_link 등
     'a[class*="link"]',  # link-black, link-point 등
     'a[target="_blank"]',  # 새창 열리는 링크 (배너/외부링크)
     '.button-solid',  # 버튼 스타일 링크
     'a[data-gnbmenuid]',  # GNB 메뉴 링크
-    'a[onclick*="KT_product_trackClicks"]',  # 트래킹 바로가기 링크
+    # 'a[onclick*="KT_product_trackClicks"]',  # 트래킹 바로가기 링크
 ]
 
 # 텍스트 추출 시 제외할 셀렉터 - 링크 내 하위 요소 중 이 셀렉터는 텍스트에서 제거
@@ -149,6 +151,11 @@ def extract_links_from_soup(soup, base_url, min_count=1):
         if is_excluded_url(href) or href in seen:
             continue
 
+        # /wDic/productDetail.do는 ItemCode 파라미터 + title 속성이 있어야만 추출
+        if '/wDic/productDetail.do' in href:
+            if 'ItemCode=' not in href or not a.get('title'):
+                continue
+
         # onclick="javascript:..." 있으면 제외 (탭/버튼 등 UI 요소)
         onclick = a.get('onclick', '')
         if 'javascript:' in onclick.lower():
@@ -162,7 +169,7 @@ def extract_links_from_soup(soup, base_url, min_count=1):
             for el in a_check.select(sel):
                 el.decompose()
         visible_text = a_check.get_text(strip=True)
-        if not visible_text:
+        if not visible_text and not a.get('title'):
             # 보이는 텍스트가 없으면 스킵 (EVENT_LABEL 있어도 무시)
             continue
 
@@ -754,7 +761,7 @@ async def extract_board_links(page):
 
     if all_links:
         logger.info(f"📋 목록 총 {len(all_links)}개 링크 추출")
-    return all_links if len(all_links) >= 3 else []
+    return all_links
 
 
 async def crawl_page(url):

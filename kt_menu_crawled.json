@@ -80,6 +80,10 @@
                 "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00074728"
               },
               {
+                "name": "iPhone 16 Pro Max",
+                "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00072554"
+              },
+              {
                 "name": "iPhone 15 Pro Max",
                 "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00067977"
               },
@@ -346,28 +350,7 @@
               {
                 "name": "Why KT USIM/eSIM",
                 "url": "https://shop.kt.com/direct/whyKTSIM.do",
-                "children": [
-                  {
-                    "name": "eSIM가입하기",
-                    "url": "https://shop.kt.com/direct/select.do?befIntmUsimUseYn=Y&duSimGbnCd=E&isSaparDirectPage=E_USE&sbscType=01&pplGroupType=yogo&pplGroupId=530&pplId=1008"
-                  },
-                  {
-                    "name": "eSIM가입하기",
-                    "url": "https://shop.kt.com/direct/select.do?befIntmUsimUseYn=Y&duSimGbnCd=E&isSaparDirectPage=E_USE&sbscType=01&pplGroupType=yogo&pplGroupId=530&pplId=1005"
-                  },
-                  {
-                    "name": "eSIM가입하기",
-                    "url": "https://shop.kt.com/direct/select.do?befIntmUsimUseYn=Y&duSimGbnCd=E&isSaparDirectPage=E_USE&sbscType=01&pplGroupType=yogo&pplGroupId=530&pplId=1015"
-                  },
-                  {
-                    "name": "eSIM가입하기",
-                    "url": "https://shop.kt.com/direct/select.do?befIntmUsimUseYn=Y&duSimGbnCd=E&isSaparDirectPage=E_USE&sbscType=01&pplGroupType=yogo&pplGroupId=530&pplId=1022"
-                  },
-                  {
-                    "name": "eSIM가입하기",
-                    "url": "https://shop.kt.com/direct/select.do?befIntmUsimUseYn=Y&duSimGbnCd=E&isSaparDirectPage=E_USE&sbscType=01&pplGroupType=yogo&pplGroupId=530&pplId=1006"
-                  }
-                ]
+                "children": []
               },
               {
                 "name": "USIM 가입",
@@ -539,6 +522,10 @@
                 "name": "통신상품",
                 "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR05&subDispNo=STOR0501",
                 "children": [
+                  {
+                    "name": "새로운 Galaxy 알림신청",
+                    "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2740"
+                  },
                   {
                     "name": "지니 TV 디즈니+ 모든G 출시 이벤트!",
                     "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2685"
@@ -2815,6 +2802,10 @@
                 "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00074728"
               },
               {
+                "name": "iPhone 16 Pro Max",
+                "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00072554"
+              },
+              {
                 "name": "iPhone 15 Pro Max",
                 "url": "https://shop.kt.com/display/olhsGoodsDtl.do?goodsCode=WL00067977"
               },
@@ -2869,12 +2860,154 @@
           {
             "name": "요금제",
             "url": "https://product.kt.com/wDic/index.do?CateCode=6002",
-            "children": []
+            "children": [
+              {
+                "name": "요고 다이렉트",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1567&CateCode=6002&filter_code=81&option_code=109&pageSize=10"
+              },
+              {
+                "name": "5G 초이스",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1485&CateCode=6002&filter_code=81&option_code=109&pageSize=10"
+              },
+              {
+                "name": "5G 스페셜/베이직",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1283&CateCode=6002&filter_code=81&option_code=109&pageSize=10"
+              },
+              {
+                "name": "5G 심플",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1406&CateCode=6002&filter_code=81&option_code=109&pageSize=10"
+              },
+              {
+                "name": "5G 슬림",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1284&CateCode=6002&filter_code=81&option_code=109&pageSize=10"
+              },
+              {
+                "name": "5G 슬림(이월)",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1570&CateCode=6002&filter_code=81&option_code=109&pageSize=10"
+              },
+              {
+                "name": "5G Y (만 34세 이하)",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1358&CateCode=6002&filter_code=81&option_code=109&pageSize=10"
+              },
+              {
+                "name": "5G Y틴 (만 18세 이하)",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1360&CateCode=6002&filter_code=81&option_code=109&pageSize=10"
+              },
+              {
+                "name": "5G 주니어(만 12세 이하)",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1480&CateCode=6002&filter_code=81&option_code=109&pageSize=10"
+              },
+              {
+                "name": "5G 시니어 (만 65세 이상)",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1558&CateCode=6002&filter_code=81&option_code=109&pageSize=10"
+              },
+              {
+                "name": "5G 웰컴 (외국인 전용)",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1577&CateCode=6002&filter_code=81&option_code=109&pageSize=20"
+              },
+              {
+                "name": "5G 복지​ (장애인 전용)",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1438&CateCode=6002&filter_code=81&option_code=109&pageSize=20"
+              }
+            ]
           },
           {
             "name": "부가서비스",
             "url": "https://product.kt.com/wDic/index.do?CateCode=6003",
-            "children": []
+            "children": [
+              {
+                "name": "(안심) 번호도용문자 차단서비스",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1047&CateCode=6003&filter_code=139&option_code=199&pageSize=10"
+              },
+              {
+                "name": "(안심) 유심보호서비스",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1645&CateCode=6003&filter_code=139&option_code=199&pageSize=10"
+              },
+              {
+                "name": "휴대폰결제 안심통보 서비스",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1264&CateCode=6003&filter_code=139&option_code=199&pageSize=10"
+              },
+              {
+                "name": "피싱/해킹 안심서비스",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1666&CateCode=6003&filter_code=139&option_code=199&pageSize=10"
+              },
+              {
+                "name": "내 마음대로 2시간 데이터 프리",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1650&CateCode=6003&filter_code=139&option_code=199&pageSize=10"
+              },
+              {
+                "name": "LTE 데이터충전",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1068&CateCode=6003&filter_code=139&option_code=199&pageSize=10"
+              },
+              {
+                "name": "KT 365 폰케어",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1604&CateCode=6003&filter_code=139&option_code=199&pageSize=10"
+              },
+              {
+                "name": "필수팩 L",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1544&CateCode=6003&filter_code=139&option_code=199&pageSize=10"
+              },
+              {
+                "name": "5G 데이터충전",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1287&CateCode=6003&filter_code=139&option_code=199&pageSize=10"
+              },
+              {
+                "name": "KT 휴대폰결제 플러스",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1646&CateCode=6003&filter_code=139&option_code=199&pageSize=10"
+              },
+              {
+                "name": "링투유",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=62&CateCode=6003&filter_code=139&option_code=199&pageSize=20"
+              },
+              {
+                "name": "리얼지니팩",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1282&CateCode=6003&filter_code=139&option_code=199&pageSize=20"
+              },
+              {
+                "name": "지니팩",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=962&CateCode=6003&filter_code=139&option_code=199&pageSize=20"
+              },
+              {
+                "name": "티빙 라이트/베이직",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1547&CateCode=6003&filter_code=139&option_code=199&pageSize=20"
+              },
+              {
+                "name": "V컬러링",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1423&CateCode=6003&filter_code=139&option_code=199&pageSize=20"
+              },
+              {
+                "name": "LTE 데이터쿠폰",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=984&CateCode=6003&filter_code=139&option_code=199&pageSize=20"
+              },
+              {
+                "name": "KT 안심박스",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1426&CateCode=6003&filter_code=139&option_code=199&pageSize=20"
+              },
+              {
+                "name": "듀얼번호 Lite",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=474&CateCode=6003&filter_code=139&option_code=199&pageSize=20"
+              },
+              {
+                "name": "유튜브 프리미엄",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1581&CateCode=6003&filter_code=139&option_code=199&pageSize=20"
+              },
+              {
+                "name": "밀리의서재",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1585&CateCode=6003&filter_code=139&option_code=199&pageSize=20"
+              },
+              {
+                "name": "티빙(KT 구독)",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1580&CateCode=6003&filter_code=139&option_code=199&pageSize=30"
+              },
+              {
+                "name": "휴대폰 결제",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=967&CateCode=6003&filter_code=139&option_code=199&pageSize=30"
+              },
+              {
+                "name": "통화중대기(모바일)",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=432&CateCode=6003&filter_code=139&option_code=199&pageSize=30"
+              }
+            ]
           },
           {
             "name": "신규메뉴 인기메뉴KT 구독",
@@ -2958,12 +3091,58 @@
           {
             "name": "요금제",
             "url": "https://product.kt.com/wDic/index.do?CateCode=6005",
-            "children": []
+            "children": [
+              {
+                "name": "토탈안심 인터넷",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1625&CateCode=6005&filter_code=117&option_code=169&pageSize=10"
+              },
+              {
+                "name": "인터넷팩S(토탈안심 인터넷 와이파이(7D))",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1502&CateCode=6005&filter_code=117&option_code=169&pageSize=10"
+              },
+              {
+                "name": "인터넷팩M(토탈안심 인터넷 와이드(7D))",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1497&CateCode=6005&filter_code=117&option_code=169&pageSize=10"
+              },
+              {
+                "name": "싱글 인터넷 베이직",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1383&CateCode=6005&filter_code=117&option_code=169&pageSize=10"
+              }
+            ]
           },
           {
             "name": "부가서비스",
             "url": "https://product.kt.com/wDic/index.do?CateCode=6006",
-            "children": []
+            "children": [
+              {
+                "name": "토탈안심",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1624&CateCode=6006&filter_code=18&option_code=37&pageSize=10"
+              },
+              {
+                "name": "홈캠 안심 서비스",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1632&CateCode=6006&filter_code=18&option_code=37&pageSize=10"
+              },
+              {
+                "name": "PC 안심 2.0",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1306&CateCode=6006&filter_code=18&option_code=37&pageSize=10"
+              },
+              {
+                "name": "KT 인터넷지킴이",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1458&CateCode=6006&filter_code=18&option_code=37&pageSize=10"
+              },
+              {
+                "name": "안심플러스",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1472&CateCode=6006&filter_code=18&option_code=37&pageSize=10"
+              },
+              {
+                "name": "인터넷 놀e터",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=144&CateCode=6006&filter_code=18&option_code=37&pageSize=10"
+              },
+              {
+                "name": "가족 안심",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1080&CateCode=6006&filter_code=18&option_code=37&pageSize=10"
+              }
+            ]
           },
           {
             "name": "와이파이(WiFi)",
@@ -2977,7 +3156,20 @@
               {
                 "name": "요금제",
                 "url": "https://product.kt.com/wDic/index.do?CateCode=6042",
-                "children": []
+                "children": [
+                  {
+                    "name": "KT WiFi 7D",
+                    "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1633&CateCode=6042&filter_code=132&option_code=190&pageSize=10"
+                  },
+                  {
+                    "name": "기가 와이파이 홈",
+                    "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1401&CateCode=6042&filter_code=132&option_code=190&pageSize=10"
+                  },
+                  {
+                    "name": "기가 와이파이 프리미엄",
+                    "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1546&CateCode=6042&filter_code=132&option_code=190&pageSize=10"
+                  }
+                ]
               }
             ]
           }
@@ -3033,7 +3225,32 @@
           {
             "name": "요금제",
             "url": "https://product.kt.com/wDic/index.do?CateCode=6008",
-            "children": []
+            "children": [
+              {
+                "name": "지니 TV 모든G",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1664&CateCode=6008&filter_code=133&option_code=191&pageSize=10"
+              },
+              {
+                "name": "TV 초이스 프리미엄",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1515&CateCode=6008&filter_code=133&option_code=191&pageSize=10"
+              },
+              {
+                "name": "TV 초이스 스페셜",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1516&CateCode=6008&filter_code=133&option_code=191&pageSize=10"
+              },
+              {
+                "name": "TV 초이스 플러스",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1517&CateCode=6008&filter_code=133&option_code=191&pageSize=10"
+              },
+              {
+                "name": "TV 일반",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1518&CateCode=6008&filter_code=133&option_code=191&pageSize=10"
+              },
+              {
+                "name": "지니 TV 탭 3",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1443&CateCode=6008&filter_code=133&option_code=191&pageSize=10"
+              }
+            ]
           },
           {
             "name": "디바이스",
@@ -3211,7 +3428,28 @@
           {
             "name": "부가서비스",
             "url": "https://product.kt.com/wDic/index.do?CateCode=6009",
-            "children": []
+            "children": [
+              {
+                "name": "지상파+JTBC 무제한 즐기기",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1463&CateCode=6009&filter_code=21&option_code=40&pageSize=10"
+              },
+              {
+                "name": "지상파 무제한 즐기기",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1307&CateCode=6009&filter_code=21&option_code=40&pageSize=10"
+              },
+              {
+                "name": "CJ ENM + JTBC 같이즐기기",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1374&CateCode=6009&filter_code=21&option_code=40&pageSize=10"
+              },
+              {
+                "name": "CJ ENM 무제한 즐기기",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1312&CateCode=6009&filter_code=21&option_code=40&pageSize=10"
+              },
+              {
+                "name": "종편 무제한 즐기기",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1308&CateCode=6009&filter_code=21&option_code=40&pageSize=10"
+              }
+            ]
           },
           {
             "name": "키즈랜드",
@@ -3252,7 +3490,56 @@
           {
             "name": "결합상품",
             "url": "https://product.kt.com/wDic/index.do?CateCode=6027",
-            "children": []
+            "children": [
+              {
+                "name": "따로 살아도 가족결합",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1630&CateCode=6027&filter_code=134&option_code=192&pageSize=10"
+              },
+              {
+                "name": "프리미엄 가족결합",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1193&CateCode=6027&filter_code=134&option_code=192&pageSize=10"
+              },
+              {
+                "name": "프리미엄 싱글결합",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1267&CateCode=6027&filter_code=134&option_code=192&pageSize=10"
+              },
+              {
+                "name": "총액 결합할인",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1133&CateCode=6027&filter_code=134&option_code=192&pageSize=10"
+              },
+              {
+                "name": "정액 결합할인",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1640&CateCode=6027&filter_code=134&option_code=192&pageSize=10"
+              },
+              {
+                "name": "우리가족 무선결합",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=977&CateCode=6027&filter_code=134&option_code=192&pageSize=10"
+              },
+              {
+                "name": "신혼미리결합",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1441&CateCode=6027&filter_code=134&option_code=192&pageSize=10"
+              },
+              {
+                "name": "Y끼리 무선결합",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1565&CateCode=6027&filter_code=134&option_code=192&pageSize=10"
+              },
+              {
+                "name": "유선 결합",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=2&CateCode=6027&filter_code=134&option_code=192&pageSize=10"
+              },
+              {
+                "name": "KT 인터넷 - MVNO 이동전화 결합",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1651&CateCode=6027&filter_code=134&option_code=192&pageSize=10"
+              },
+              {
+                "name": "요고뭉치 결합",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1571&CateCode=6027&filter_code=134&option_code=192&pageSize=20"
+              },
+              {
+                "name": "3G 뭉치면올레",
+                "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1&CateCode=6027&filter_code=134&option_code=192&pageSize=20"
+              }
+            ]
           }
         ]
       },
@@ -3288,12 +3575,58 @@
           {
             "name": "인기메뉴통신상품",
             "url": "https://product.kt.com/wDic/soho/index.do?CateCode=7002",
-            "children": []
+            "children": [
+              {
+                "name": "5G 초이스",
+                "url": "https://product.kt.com/wDic/soho/productDetail.do?ItemCode=1485&CateCode=7002&filter_code=15&option_code=16&pageSize=10"
+              },
+              {
+                "name": "지니 TV 모든G",
+                "url": "https://product.kt.com/wDic/soho/productDetail.do?ItemCode=1664&CateCode=7002&filter_code=15&option_code=16&pageSize=10"
+              },
+              {
+                "name": "결제안심 인터넷",
+                "url": "https://product.kt.com/wDic/soho/productDetail.do?ItemCode=1506&CateCode=7002&filter_code=15&option_code=16&pageSize=10"
+              }
+            ]
           },
           {
             "name": "매장솔루션",
             "url": "https://product.kt.com/wDic/soho/index.do?CateCode=7008",
-            "children": []
+            "children": [
+              {
+                "name": "우리동네TV",
+                "url": "https://product.kt.com/wDic/soho/productDetail.do?ItemCode=1617&CateCode=7008&filter_code=13&option_code=14&pageSize=10"
+              },
+              {
+                "name": "가게정보알림메시지 (소상공인형)",
+                "url": "https://product.kt.com/wDic/soho/productDetail.do?ItemCode=1451&CateCode=7008&filter_code=13&option_code=14&pageSize=10"
+              },
+              {
+                "name": "링고비즈",
+                "url": "https://product.kt.com/wDic/soho/productDetail.do?ItemCode=1410&CateCode=7008&filter_code=13&option_code=14&pageSize=10"
+              },
+              {
+                "name": "사장님 배달POS",
+                "url": "https://product.kt.com/wDic/soho/productDetail.do?ItemCode=1539&CateCode=7008&filter_code=13&option_code=14&pageSize=10"
+              },
+              {
+                "name": "사장님 배달POS 전화",
+                "url": "https://product.kt.com/wDic/soho/productDetail.do?ItemCode=1522&CateCode=7008&filter_code=13&option_code=14&pageSize=10"
+              },
+              {
+                "name": "사장님 배달POS 인터넷전화",
+                "url": "https://product.kt.com/wDic/soho/productDetail.do?ItemCode=1536&CateCode=7008&filter_code=13&option_code=14&pageSize=10"
+              },
+              {
+                "name": "0502평생번호",
+                "url": "https://product.kt.com/wDic/soho/productDetail.do?ItemCode=181&CateCode=7008&filter_code=13&option_code=14&pageSize=10"
+              },
+              {
+                "name": "통화매니저 PC",
+                "url": "https://product.kt.com/wDic/soho/productDetail.do?ItemCode=376&CateCode=7008&filter_code=13&option_code=14&pageSize=10"
+              }
+            ]
           },
           {
             "name": "으랏차차 패키지",
@@ -3318,7 +3651,20 @@
               {
                 "name": "집전화/매장전화",
                 "url": "https://product.kt.com/wDic/index.do?CateCode=6011",
-                "children": []
+                "children": [
+                  {
+                    "name": "AI 전화",
+                    "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1553&CateCode=6011&filter_code=24&option_code=43&pageSize=10"
+                  },
+                  {
+                    "name": "집전화 3000",
+                    "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=974&CateCode=6011&filter_code=24&option_code=43&pageSize=10"
+                  },
+                  {
+                    "name": "사장님 배달POS 전화",
+                    "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=1522&CateCode=6011&filter_code=24&option_code=43&pageSize=10"
+                  }
+                ]
               },
               {
                 "name": "인터넷전화",
@@ -3349,7 +3695,20 @@
               {
                 "name": "부가서비스",
                 "url": "https://product.kt.com/wDic/index.do?CateCode=6017",
-                "children": []
+                "children": [
+                  {
+                    "name": "국제 SMS",
+                    "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=253&CateCode=6017&filter_code=135&option_code=193&pageSize=10"
+                  },
+                  {
+                    "name": "국제 콜렉트콜",
+                    "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=254&CateCode=6017&filter_code=135&option_code=193&pageSize=10"
+                  },
+                  {
+                    "name": "요금즉시통보 0071",
+                    "url": "https://product.kt.com/wDic/productDetail.do?ItemCode=257&CateCode=6017&filter_code=135&option_code=193&pageSize=10"
+                  }
+                ]
               }
             ]
           }
@@ -3363,10 +3722,6 @@
             "name": "한눈에보기",
             "url": "https://globalroaming.kt.com/main",
             "children": [
-              {
-                "name": "상품안내",
-                "url": "https://globalroaming.kt.com/product/data/geu"
-              },
               {
                 "name": "일본",
                 "url": "https://globalroaming.kt.com/rate/rate?nation=일본&duration=2&condition=all"
@@ -3394,6 +3749,10 @@
               {
                 "name": "함께 쓰는 로밍",
                 "url": "https://globalroaming.kt.com/product/data/gasam"
+              },
+              {
+                "name": "Y 함께 쓰는 로밍",
+                "url": "https://globalroaming.kt.com/product/data/geu"
               },
               {
                 "name": "공항로밍센터안내",
@@ -3894,6 +4253,10 @@
             "name": "Shop 기획전",
             "url": "https://shop.kt.com/display/olhsStore.do?dispNo=STOR05",
             "children": [
+              {
+                "name": "새로운 Galaxy 알림신청",
+                "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2740"
+              },
               {
                 "name": "지니 TV 디즈니+ 모든G 출시 이벤트!",
                 "url": "https://shop.kt.com/display/olhsPlan.do?plnDispNo=2685"
@@ -4932,160 +5295,7 @@
           {
             "name": "서비스 안내",
             "url": "https://help.kt.com/serviceinfo/ServiceJoinGuide.do",
-            "children": [
-              {
-                "name": "가입방법 안내",
-                "url": "https://help.kt.com/serviceinfo/ServiceJoinGuideL1.do"
-              },
-              {
-                "name": "모바일 번호이동 가입안내",
-                "url": "https://help.kt.com/serviceinfo/ServiceJoinGuideL2.do"
-              },
-              {
-                "name": "가입비 안내",
-                "url": "https://help.kt.com/serviceinfo/ServiceJoinGuideL3.do"
-              },
-              {
-                "name": "가입신청 구비서류 안내",
-                "url": "https://help.kt.com/serviceinfo/ServiceJoinGuideL4.do"
-              },
-              {
-                "name": "KT모바일 전화번호 관리 기준",
-                "url": "https://help.kt.com/serviceinfo/ServiceJoinGuideL5.do"
-              },
-              {
-                "name": "KT 아이폰 기기변경",
-                "url": "https://help.kt.com/serviceinfo/ServiceJoinGuideL6.do"
-              },
-              {
-                "name": "애플워치 연결 안내",
-                "url": "https://help.kt.com/serviceinfo/ServiceJoinGuideL7.do"
-              },
-              {
-                "name": "명의변경 방법",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL1.do"
-              },
-              {
-                "name": "개명/개칭 방법",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL2.do"
-              },
-              {
-                "name": "가입정보 변경",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL3.do"
-              },
-              {
-                "name": "승계 프로그램",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL5.do"
-              },
-              {
-                "name": "모바일 일시정지",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL6.do"
-              },
-              {
-                "name": "통화내역열람 (지점방문)",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL7.do"
-              },
-              {
-                "name": "통화내역열람 (홈페이지)",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL8.do"
-              },
-              {
-                "name": "USIM",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL9.do"
-              },
-              {
-                "name": "고객 Lock설정",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL10.do"
-              },
-              {
-                "name": "USIM 이동성",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL11.do"
-              },
-              {
-                "name": "사업자 간 USIM 이동성",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL12.do"
-              },
-              {
-                "name": "다른 고객의 휴대폰 사용방법",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL13.do"
-              },
-              {
-                "name": "타 통신사 휴대폰으로USIM 이동",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL14.do"
-              },
-              {
-                "name": "타 통신사 휴대폰에서무선 인터넷이용",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL15.do"
-              },
-              {
-                "name": "타 통신사 휴대폰 이동 시기존 서비스 이용",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL16.do"
-              },
-              {
-                "name": "휴대폰 분실 시 해야 할 일",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL17.do"
-              },
-              {
-                "name": "이동성 관련 유의사항",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL18.do"
-              },
-              {
-                "name": "금융 USIM 사용법",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL19.do"
-              },
-              {
-                "name": "금융 USIM 활용",
-                "url": "https://help.kt.com/serviceinfo/ServiceAlterGuideL20.do"
-              },
-              {
-                "name": "모바일 해지 구비서류 안내",
-                "url": "https://help.kt.com/serviceinfo/ServiceCloseGuideL1.do"
-              },
-              {
-                "name": "홈상품 해지 구비서류 안내",
-                "url": "https://help.kt.com/serviceinfo/ServiceCloseGuideL2.do"
-              },
-              {
-                "name": "요금기준안내",
-                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL1.do"
-              },
-              {
-                "name": "온라인 즉시납부",
-                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL2.do"
-              },
-              {
-                "name": "자동납부",
-                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL3.do"
-              },
-              {
-                "name": "지로납부",
-                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL4.do"
-              },
-              {
-                "name": "납기일",
-                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL6.do"
-              },
-              {
-                "name": "과오납 등 유보금 미환급요금안내",
-                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL7.do"
-              },
-              {
-                "name": "모바일 해지 미환급금 안내",
-                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL8.do"
-              },
-              {
-                "name": "모바일채권 보존료미환급금 안내",
-                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL9.do"
-              },
-              {
-                "name": "통신비 자동이체 변경",
-                "url": "https://help.kt.com/serviceinfo/BillPaymentGuideL10.do"
-              },
-              {
-                "name": "요금명세서 안내",
-                "url": "https://help.kt.com/serviceinfo/BillStatementGuideL1.do"
-              }
-            ]
+            "children": []
           },
           {
             "name": "Shop 이용안내",
@@ -5110,28 +5320,7 @@
               {
                 "name": "신청서 다운로드",
                 "url": "https://help.kt.com/serviceinfo/UseRegUseInfo.do",
-                "children": [
-                  {
-                    "name": "이용신청서 작성",
-                    "url": "https://help.kt.com/serviceinfo/UseRegUseWriter.do"
-                  },
-                  {
-                    "name": "대리점 찾기",
-                    "url": "https://help.kt.com/store/KtStoreSearch.do"
-                  },
-                  {
-                    "name": "통화내역조회",
-                    "url": "https://my.kt.com/usage/MoTelCallInfo.do"
-                  },
-                  {
-                    "name": "일시정지 신청/해지",
-                    "url": "https://my.kt.com/pause/MobilePauseInfo.do"
-                  },
-                  {
-                    "name": "서류양식 다운로드",
-                    "url": "https://help.kt.com/serviceinfo/FormdownloadInfo.do"
-                  }
-                ]
+                "children": []
               },
               {
                 "name": "사용설명서 자료실",
@@ -5141,20 +5330,7 @@
               {
                 "name": "접속설치 프로그램",
                 "url": "https://help.kt.com/serviceinfo/EggSWDownloadInfo.do",
-                "children": [
-                  {
-                    "name": "WiBro S/W",
-                    "url": "https://help.kt.com/serviceinfo/EggSWDownloadInfo.do"
-                  },
-                  {
-                    "name": "접속프로그램",
-                    "url": "https://help.kt.com/serviceinfo/ProgramDownloadInfo.do"
-                  },
-                  {
-                    "name": "설치드라이브",
-                    "url": "https://help.kt.com/serviceinfo/SetupDownloadInfo.do"
-                  }
-                ]
+                "children": []
               }
             ]
           },
@@ -5165,42 +5341,12 @@
               {
                 "name": "장애인상품 가입안내",
                 "url": "https://help.kt.com/disabledInfo/DisabledProdGuide1.do",
-                "children": [
-                  {
-                    "name": "전용 요금제",
-                    "url": "https://help.kt.com/disabledInfo/DisabledProdGuide1.do"
-                  },
-                  {
-                    "name": "전용 부가서비스",
-                    "url": "https://help.kt.com/disabledInfo/DisabledProdGuide2.do"
-                  },
-                  {
-                    "name": "복지할인 제도",
-                    "url": "https://help.kt.com/disabledInfo/DisabledProdGuide3.do"
-                  },
-                  {
-                    "name": "자세히 알아보기",
-                    "url": "https://product.kt.com/wDic/index.do?CateCode=6002"
-                  }
-                ]
+                "children": []
               },
               {
                 "name": "장애인용 서비스 이용안내",
                 "url": "https://help.kt.com/disabledInfo/DisabledServiceGuide1.do",
-                "children": [
-                  {
-                    "name": "전용 고객센터",
-                    "url": "https://help.kt.com/disabledInfo/DisabledServiceGuide1.do"
-                  },
-                  {
-                    "name": "전용 요금명세서",
-                    "url": "https://help.kt.com/disabledInfo/DisabledServiceGuide2.do"
-                  },
-                  {
-                    "name": "기타 유용한 TIP",
-                    "url": "https://help.kt.com/disabledInfo/DisabledServiceGuide4.do"
-                  }
-                ]
+                "children": []
               }
             ]
           },
