@@ -11,7 +11,7 @@ from langchain_core.runnables import RunnablePassthrough
 
 # API 키 설정 (테스트용)
 if not os.getenv('GOOGLE_API_KEY'):
-    os.environ['GOOGLE_API_KEY'] = "AIzaSyBn57h__X5SmWxDEgeRwmr9FpAsdxHcLOg"
+    os.environ['GOOGLE_API_KEY'] = ""
 
 
 def load_menu_data(file_path):
